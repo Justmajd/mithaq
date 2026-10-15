@@ -1,7 +1,7 @@
 # Mithaq — Jordan civil-status services chatbot
 
 Answers citizens' questions about **passports, family books and smart ID cards** using only the 12 documents in `data/`.
-Answers are generated at runtime by the provided model **`command-r7b-arabic:7b`** (Ollama); **`bge-m3`** is used locally for embeddings.
+Every answer is generated at runtime by the provided model **`command-r7b-arabic:7b`** (Ollama). **`bge-m3`** runs locally for embeddings.
 
 ## Run
 
@@ -11,51 +11,91 @@ ollama pull bge-m3
 python main.py questions.json        # or: python3 main.py questions.json
 ```
 
-Writes `answers.json` next to `main.py`. Standard library only — no `pip install`, works fully offline once the two models are pulled. Python 3.8+.
+- Writes `answers.json` next to `main.py`, in the same structure as the input, with `answer` and `contexts` added to every message.
+- Needs only the Python standard library (3.8+): no `pip install`.
+- Works fully offline once the two models are pulled. Ollama must be running on `localhost:11434`.
+- Takes about 4–5 seconds per question on an M1 Pro.
+
+## Project layout
+
+| Path | What it is |
+|---|---|
+| `main.py` | The whole bot: data loading, routing, retrieval, prompting, guardrails, output |
+| `data/` | The 12 service documents (unchanged) |
+| `questions.json` / `answers.json` | Practice input and the bot's output for it |
+| `tests/` | Test sets, generators and the scorer (`check.py`) |
 
 ## How it works
 
-**1. Data handling** — each file is cleaned (menu leftovers like الرئيسية / الخدمات / شارك dropped) and split into its 9 fields
-(الفئة المستفيدة, أماكن تقديم الخدمة, الشروط, الوثائق المطلوبة, الإجراءات, الزمن المستغرق, شركاء الخدمة, ملاحظات, الرسوم).
-Every field becomes a chunk `"<service> - <field>: <text>"`. Notes are split into one chunk per rule, because facts hide there. Wording is never changed.
+**1. Data handling**
+- Each file is cleaned: menu leftovers like الرئيسية / الخدمات / شارك are dropped.
+- Each file is split into its 9 fields: الفئة المستفيدة، أماكن تقديم الخدمة، الشروط، الوثائق المطلوبة، الإجراءات، الزمن المستغرق، شركاء الخدمة، ملاحظات، الرسوم.
+- Every field becomes a chunk `"<service> - <field>: <text>"`.
+- Notes are split into one chunk per rule, because facts hide there.
+- Wording is never changed.
 
-**2. Finding the right service** (deterministic, so look-alike files are never confused)
-- Keyword routing picks the **document** (passport / family book / ID card) and the **situation** (first time / renewal / lost / damaged) in
-  Arabic (MSA + Jordanian dialect), English, mixed Arabic/English and Arabizi (`da3at hawiyti`, `tajdeed el jawaz`).
-- Questions naming two services (comparisons) get both; follow-up messages inherit the service from the same chat.
-- Field keywords pick the section (fees, documents, time, places, conditions…); `bge-m3` similarity is the fallback when no keyword matches.
+**2. Finding the right information.** This step is deterministic, so look-alike files are never confused.
+- Keywords pick the **document** (passport / family book / ID card) and the **situation** (first time / renewal / lost / damaged).
+  This works in Arabic (MSA and Jordanian dialect), English, mixed Arabic/English and Arabizi (e.g. `da3at hawiyti`, `tajdeed el jawaz`).
+- A question that names two services (a comparison) gets both. A follow-up message reuses the service from earlier in the same chat.
+- Field keywords pick the section (fees, documents, time, places, conditions…). Generic words like "how much", "kam" and "who" count only
+  when nothing more specific matches. Deadline words ("خلال", "within", "5ilal") point to the notes. `bge-m3` similarity is the fallback
+  when no keyword matches.
+- **Fee-case selector:** fees depend on the asker's case. The bot reads the case from the question (age, expired or still valid, abroad or
+  in Jordan, military, full pages, first or later loss, late fine) and keeps only the fee lines that apply.
 
 **3. Answering without making things up**
-- The selected chunks are passed to the model in Command-R's native grounded-RAG format (as search-tool results). Notes come first
-  (or fee lines first for fee questions), and each fee line is its own document, so the model picks the line that matches the asker.
-- System prompt: answer only from the results, copy numbers exactly, pick the case that matches the asker, correct false assumptions,
-  say "not available" otherwise.
-- **Number check:** if an answer contains a number that appears in neither the documents nor the question, it is regenerated.
-- `contexts` = only the chunks used (note items the answer doesn't reflect are dropped).
+- The selected chunks go to the model in Command-R's native grounded-RAG format, as search-tool results.
+- Notes are listed first, or the fee lines first for fee questions. Each fee line is its own document.
+- On comparisons, the model is told to answer for every service named.
+- The system prompt tells the model to:
+  - answer only from the results, and copy numbers exactly;
+  - pick the case that matches the asker;
+  - treat a rule in the notes as overriding general information (e.g. when the document is handed over);
+  - correct false assumptions;
+  - otherwise say the information is not available.
+- **Number check:** if an answer contains a number found in neither the documents nor the question, it is regenerated. Number words in the
+  documents (e.g. السادسة عشر = 16, أسبوعين = 2 weeks) count as found.
+- `contexts` lists only the chunks used: note items the answer doesn't reflect are dropped.
 
-**4. Guardrails** — off-topic questions (flights, visas, licences…) are declined; unclear questions ("قديش الرسوم؟") get a clarifying question;
-illegal requests (forgery, bribery) and requests for other people's personal data are refused; other countries' passports and services
-not in the data are declined. All of these return `contexts: []`. Prompt-injection attempts are ignored.
+**4. Guardrails.** All of these return `contexts: []`.
+- Off-topic questions (flights, visas, licences…) are declined.
+- Unclear questions ("قديش الرسوم؟") get a clarifying question.
+- Illegal requests (forgery, bribery) and requests for other people's personal data are refused.
+- Questions about other countries' passports, and services not in the data, are declined.
+- Prompt-injection attempts are ignored.
 
-**5. Robustness** — each message is wrapped in try/except (`"answer": "error"` on failure), `answers.json` is saved after every chat,
-malformed input is skipped, Ollama calls retry once. English questions get English answers; everything else is answered in Arabic.
+**5. Robustness**
+- Each message is wrapped in try/except, so a failure gives `"answer": "error"` instead of a crash.
+- `answers.json` is saved after every chat, and malformed input is skipped.
+- Ollama calls retry once.
+- English questions get English answers. Arabic, mixed and Arabizi questions are answered in Arabic.
 
 ## Tests
 
 ```bash
-python3 tests/make_multilang.py     # 4 × 70 questions: Arabic, English, mixed, Arabizi
-python3 tests/make_small.py         # 100-question subset (25 per language, all question types)
+python3 tests/make_multilang.py     # builds 4 × 70 questions: Arabic, English, mixed, Arabizi
+python3 tests/make_small.py         # builds the 100-question subset (25 per language, all question types)
 python3 main.py tests/q_small.json && python3 tests/check.py tests/q_small.json answers.json
 ```
 
-`tests/check.py` scores each answer for the key fact (`must`), forbidden content (`must_not`) and the right source (`ctx`).
-Facts used for expectations are in `tests/FACTS.md`.
+`tests/check.py` checks each answer for three things:
+- the key fact (`must`);
+- content that must not appear (`must_not`);
+- the right source (`ctx`).
+
+The facts behind the expected answers are in `tests/FACTS.md`. Running a test set overwrites `answers.json`. Run `python main.py questions.json` again afterwards.
 
 | Test set | Result |
 |---|---|
-| 100 questions (25 Arabic / 25 English / 25 mixed / 25 Arabizi) | 84/100 on the full run; afterwards 13 of the 16 failures fixed (fee-case selector, notes handling) — ~97/100 expected, full set not re-run |
-| Guardrails (`tests/q_guard.json`: injection, illegal, personal data, other countries, garbage, long input) | 26/26 |
-| Out of scope / unclear / conversation / places / time / documents | 100% on the 100-question set |
+| 100 questions (25 each: Arabic, English, mixed, Arabizi) | 84/100 on the last full run (23 / 22 / 20 / 19). Then 13 of the 16 failures were fixed (verified on those 16). Full set not re-run since |
+| Guardrails (`tests/q_guard.json`: injection, illegal requests, personal data, other countries, garbage, long input) | 26/26 (run before the last fixes) |
+| Practice `questions.json` | 6/6 answered from the right service, with no errors |
 
-Known weak spots: rules hidden in the notes (e.g. lost ID card issued only 2 weeks after the police report) and picking the right
-fee line when several cases apply.
+## Known issues
+
+- A false claim phrased as a check ("takes two days صح؟") sometimes gets "not available" instead of the correction.
+- Some Arabizi questions about rules in the notes still miss the rule: intentional passport damage → investigation committee, and the
+  family book renewal deadline of 3 months.
+- A question about something the documents don't cover but which sounds related (e.g. a passport delivery fee) can get an invented
+  amount. The number check can't catch it when that number appears elsewhere in the documents.
