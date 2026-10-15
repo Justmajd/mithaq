@@ -285,6 +285,128 @@ def normalize_arabic(text: str) -> str:
     return t
 
 
+# Arabizi / Franco-Arabic Transliteration Dictionary
+ARABIZI_MAP = {
+    "baddi": "بدي", "badi": "بدي", "beddi": "بدي", "bedi": "بدي",
+    "jawaz": "جواز", "jawazi": "جوازي", "jawas": "جواز", "basbor": "باسبور", "safar": "سفر",
+    "hawyeh": "هوية", "haweyeh": "هوية", "hawya": "هوية", "bitaqa": "بطاقة", "bataqa": "بطاقة", "zakeyeh": "ذكية", "zakyeh": "ذكية",
+    "dafter": "دفتر", "daftar": "دفتر", "3eileh": "عائلة", "3ayleh": "عائلة", "3a2eleh": "عائلة", "3a2ilah": "عائلة",
+    "a6ale3": "اطلع", "atale3": "اطلع", "atala3": "اطلع", "a3mel": "اعمل", "asawe": "اسوي",
+    "tajdeed": "تجديد", "tajdid": "تجديد", "ajaded": "اجدد", "ajadded": "اجدد",
+    "daya3et": "ضيعت", "daya3to": "ضيعته", "da3": "ضاع", "faqad": "فاقد", "fa8ad": "فاقد",
+    "talef": "تالف", "maksoor": "مكسور", "kharban": "خربان", "in5azaq": "انخزق", "mablol": "مبلول",
+    "2awwal": "اول", "awwal": "اول", "awal": "اول", "marra": "مرة", "mara": "مرة",
+    "kam": "كم", "adish": "قديش", "2adesh": "قديش", "gadesh": "قديش", "qadesh": "قديش",
+    "rosom": "رسوم", "rosum": "رسوم", "rusum": "رسوم", "se3er": "سعر",
+    "wra2": "اوراق", "wra8": "اوراق", "awraq": "اوراق", "watha2eq": "وثائق", "matloob": "مطلوب", "lazem": "لازم",
+    "matloobeh": "مطلوبة", "matlooba": "مطلوبة",
+    "shoroot": "شروط", "shurut": "شروط", "3omor": "عمر", "3omri": "عمري",
+    "wein": "وين", "wen": "وين", "makan": "مكان", "safara": "سفارة", "safarah": "سفارة", "maktab": "مكتب",
+    "waqt": "وقت", "waqet": "وقت", "d8ayeq": "دقائق",
+    "tzawwajet": "تزوجت", "tzawajet": "تزوجت", "zawj": "زوج", "mowlood": "مولود", "walad": "ولد",
+    "el": "ال", "al": "ال", "il": "ال"
+}
+
+
+def is_arabizi_query(text: str) -> bool:
+    """Detects if query is written in Arabizi (Franco-Arabic)."""
+    if re.search(r"[a-zA-Z]+[2356789]|[2356789]+[a-zA-Z]", text):
+        return True
+    lower = text.lower()
+    franco_tokens = [
+        "baddi", "beddi", "jawaz", "hawyeh", "dafter", "3eileh", "a6ale3", "tajdeed",
+        "daya3et", "elrosom", "elwra2", "el3eileh", "elhawyeh", "eljawaz", "maksoor"
+    ]
+    return any(t in lower for t in franco_tokens)
+
+
+def transliterate_arabizi(text: str) -> str:
+    """Converts Arabizi (Franco-Arabic) input into standard Arabic."""
+    words = text.lower().split()
+    translated = []
+    for w in words:
+        clean_w = re.sub(r"[^a-z0-9]", "", w)
+        if clean_w in ARABIZI_MAP:
+            translated.append(ARABIZI_MAP[clean_w])
+        elif clean_w.startswith("el") and clean_w[2:] in ARABIZI_MAP:
+            translated.append("ال" + ARABIZI_MAP[clean_w[2:]])
+        elif clean_w.startswith("al") and clean_w[2:] in ARABIZI_MAP:
+            translated.append("ال" + ARABIZI_MAP[clean_w[2:]])
+        elif clean_w.startswith("l") and clean_w[1:] in ARABIZI_MAP:
+            translated.append("ال" + ARABIZI_MAP[clean_w[1:]])
+        else:
+            translated.append(w)
+    return " ".join(translated)
+
+
+class Guardrails:
+    """Comprehensive Guardrails engine for input defense, fact verification, and output safety."""
+
+    @staticmethod
+    def check_prompt_injection(question: str) -> bool:
+        """Input Guardrail: Detects jailbreak, prompt injection, or system override attempts."""
+        patterns = [
+            r"ignore\s+(?:all\s+)?(?:previous\s+)?instructions",
+            r"ignore\s+(?:all\s+)?rules",
+            r"system\s+prompt",
+            r"you\s+are\s+now",
+            r"act\s+as\s+a",
+            r"jailbreak",
+            r"override\s+rules",
+            r"تجاهل\s+(?:كل\s+)?(?:التعليمات|الاوامر|القوانين)",
+            r"انسى\s+(?:كل\s+)?(?:شيء|شي|التعليمات)",
+            r"انت\s+الان\s+لست",
+            r"كود\s+خبيث",
+            r"تجاوز\s+التعليمات"
+        ]
+        q_lower = question.lower()
+        for p in patterns:
+            if re.search(p, q_lower):
+                return True
+        return False
+
+    @staticmethod
+    def sanitize_output(answer: str, is_en: bool = False) -> str:
+        """Output Guardrail: Strips conversational chit-chat, fillers, and markdown hallucinations."""
+        filler_patterns = [
+            r"هل\s+ترغب\s+في\s+مساعد[ةه]\s+أخرى.*$",
+            r"هل\s+لديك\s+أي\s+استفسار.*$",
+            r"أتمنى\s+أن\s+أكون\s+قد\s+أفدتك.*$",
+            r"في\s+حال\s+كان\s+لديك\s+أي\s+سؤال.*$",
+            r"hope\s+this\s+helps.*$",
+            r"is\s+there\s+anything\s+else.*$",
+            r"feel\s+free\s+to\s+ask.*$",
+            r"as\s+an\s+ai.*$"
+        ]
+        clean_ans = answer.strip()
+        for pat in filler_patterns:
+            clean_ans = re.sub(pat, "", clean_ans, flags=re.IGNORECASE | re.DOTALL).strip()
+        return clean_ans
+
+    @staticmethod
+    def verify_numerical_grounding(answer: str, contexts: List[str]) -> bool:
+        """
+        Output Guardrail: Verifies that fee amounts mentioned in answer exist in the context snippets.
+        Prevents hallucinated currency numbers.
+        """
+        if not contexts:
+            return True
+        nums_in_ans = set(re.findall(r"\b(\d{1,3})\b", answer))
+        excluded = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "16", "18", "45", "90", "180"}
+        fee_nums_in_ans = nums_in_ans - excluded
+        if not fee_nums_in_ans:
+            return True
+            
+        ctx_text = " ".join(contexts)
+        nums_in_ctx = set(re.findall(r"\b(\d{1,3})\b", ctx_text))
+        
+        for n in fee_nums_in_ans:
+            if n not in nums_in_ctx:
+                return False
+        return True
+
+
+
 def is_out_of_scope(question: str, prior_services: Optional[List[str]] = None) -> bool:
     norm_q = normalize_arabic(question)
     lower_q = question.lower()
@@ -721,31 +843,46 @@ def process_questions(questions_path: str, output_path: str, data_dir: str, mode
 
         for msg in messages:
             msg_id = msg.get("message_id")
-            question = msg.get("question", "").strip()
-            is_en = is_english_query(question)
+            raw_question = msg.get("question", "").strip()
 
             try:
-                # 1. Out of Scope Check
-                if is_out_of_scope(question, prior_services=prior_services):
-                    ans = OUT_OF_SCOPE_RESPONSE_EN if is_en else OUT_OF_SCOPE_RESPONSE
-                    ctx = []
-                elif is_unclear_question(question, prior_services=prior_services):
-                    ans = UNCLEAR_RESPONSE_EN if is_en else UNCLEAR_RESPONSE
+                # 0. Prompt Injection / Jailbreak Guardrail
+                if Guardrails.check_prompt_injection(raw_question):
+                    ans = "عذراً، لا يمكنني الاستجابة لهذا النوع من الطلبات. أنا مخصص فقط للمساعدة في خدمات دائرة الأحوال المدنية والجوازات الرسمية."
                     ctx = []
                 else:
-                    # 2. Service Routing
-                    service_keys = detect_services(question, prior_services=prior_services)
-                    if service_keys:
-                        prior_services = service_keys  # update memory for multi-turn
+                    # Arabizi / Franco-Arabic Transliteration Layer
+                    is_arabizi = is_arabizi_query(raw_question)
+                    question = transliterate_arabizi(raw_question) if is_arabizi else raw_question
+                    is_en = is_english_query(question) and not is_arabizi
 
-                    # 3. Section Extraction
-                    target_sections = detect_target_sections(question)
+                    # 1. Out of Scope Check
+                    if is_out_of_scope(question, prior_services=prior_services):
+                        ans = OUT_OF_SCOPE_RESPONSE_EN if is_en else OUT_OF_SCOPE_RESPONSE
+                        ctx = []
+                    elif is_unclear_question(question, prior_services=prior_services):
+                        ans = UNCLEAR_RESPONSE_EN if is_en else UNCLEAR_RESPONSE
+                        ctx = []
+                    else:
+                        # 2. Service Routing
+                        service_keys = detect_services(question, prior_services=prior_services)
+                        if service_keys:
+                            prior_services = service_keys  # update memory for multi-turn
 
-                    # 4. Build Contexts
-                    ctx = build_contexts(kb, service_keys, target_sections, question)
+                        # 3. Section Extraction
+                        target_sections = detect_target_sections(question)
 
-                    # 5. LLM Answer Generation
-                    ans = generate_answer_via_ollama(question, ctx, model=model)
+                        # 4. Build Contexts
+                        ctx = build_contexts(kb, service_keys, target_sections, question)
+
+                        # 5. LLM Answer Generation
+                        ans = generate_answer_via_ollama(question, ctx, model=model)
+
+                        # 6. Post-Generation Output Guardrails & Fact Checking
+                        if ctx:
+                            ans = Guardrails.sanitize_output(ans, is_en=is_en)
+                            if not Guardrails.verify_numerical_grounding(ans, ctx):
+                                ans = build_deterministic_fallback(question, ctx)
 
             except Exception as e:
                 # Brief requirement: Never crash, produce error fallback
@@ -755,7 +892,7 @@ def process_questions(questions_path: str, output_path: str, data_dir: str, mode
 
             processed_messages.append({
                 "message_id": msg_id,
-                "question": question,
+                "question": raw_question,
                 "answer": ans,
                 "contexts": ctx
             })
