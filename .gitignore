@@ -1,6 +1,6 @@
+.DS_Store
 __pycache__/
-*.py[cod]
-*$py.class
-.vscode/
-.idea/
-*.log
+*.pyc
+answers.json.tmp
+tests/log_*.txt
+tests/answers_*.json

@@ -1,0 +1,1872 @@
+{
+ "chats": [
+  {
+   "chat_id": "ar-c01",
+   "messages": [
+    {
+     "message_id": "ar-c01-1",
+     "type": "fee_situation",
+     "question": "عمري 35 وجوازي منتهي من شهرين، قديش رسوم التجديد؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c06",
+   "messages": [
+    {
+     "message_id": "ar-c06-1",
+     "type": "time",
+     "question": "كم دقيقة بياخذ تجديد جواز السفر؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c09",
+   "messages": [
+    {
+     "message_id": "ar-c09-1",
+     "type": "fee_situation",
+     "question": "أنا أردني مقيم بقطر وما عمري طلعت جواز، كم رسوم أول جواز من السفارة؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c11",
+   "messages": [
+    {
+     "message_id": "ar-c11-1",
+     "type": "places",
+     "question": "وين بقدم على جواز سفر لأول مرة؟",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c12",
+   "messages": [
+    {
+     "message_id": "ar-c12-1",
+     "type": "fee",
+     "question": "بطاقتي الذكية انكسرت نصين، قديش رسوم بدل التالف؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c14",
+   "messages": [
+    {
+     "message_id": "ar-c14-1",
+     "type": "fee_situation",
+     "question": "هاي تاني مرة بضيع فيها جواز السفر، قديش الرسوم هالمرة؟",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c18",
+   "messages": [
+    {
+     "message_id": "ar-c18-1",
+     "type": "hidden_in_notes",
+     "question": "إذا الجواز تلف بشكل متعمد شو بصير بالمعاملة؟",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c22",
+   "messages": [
+    {
+     "message_id": "ar-c22-1",
+     "type": "documents",
+     "question": "شو الوثائق المطلوبة لأول دفتر عائلة بعد الزواج؟",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c26",
+   "messages": [
+    {
+     "message_id": "ar-c26-1",
+     "type": "hidden_in_notes",
+     "question": "انتهت صلاحية دفتر العائلة، خلال قديش لازم أجدده؟",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c29",
+   "messages": [
+    {
+     "message_id": "ar-c29-1",
+     "type": "conditions",
+     "question": "مين المسموح له يقدم طلب دفتر عائلة بدل فاقد؟",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c34",
+   "messages": [
+    {
+     "message_id": "ar-c34-1",
+     "type": "hidden_in_notes",
+     "question": "عمري 20 وما طلعت هوية أبداً، في غرامة تأخير لما أطلعها لأول مرة؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c40",
+   "messages": [
+    {
+     "message_id": "ar-c40-1",
+     "type": "hidden_in_notes",
+     "question": "بلغت الشرطة إنه هويتي ضاعت، إمتى بقدر أستلم البطاقة البديلة؟",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c41",
+   "messages": [
+    {
+     "message_id": "ar-c41-1",
+     "type": "comparison",
+     "question": "أيهما أسرع: تجديد جواز السفر أم تجديد البطاقة الذكية؟",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c43",
+   "messages": [
+    {
+     "message_id": "ar-c43-1",
+     "type": "comparison",
+     "question": "شو الفرق بالرسوم بين جواز بدل تالف وهوية بدل تالف؟",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c46",
+   "messages": [
+    {
+     "message_id": "ar-c46-1",
+     "type": "comparison",
+     "question": "ضاع جوازي لأول مرة وضاع دفتر العيلة كمان، قديش رسوم كل واحد؟",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c47",
+   "messages": [
+    {
+     "message_id": "ar-c47-1",
+     "type": "wrong_assumption",
+     "question": "أنا متزوجة، صح لازم زوجي يوافق عشان أطلع جواز سفر لأول مرة؟",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c49",
+   "messages": [
+    {
+     "message_id": "ar-c49-1",
+     "type": "wrong_assumption",
+     "question": "تجديد دفتر العائلة بياخذ يومين صح؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c51",
+   "messages": [
+    {
+     "message_id": "ar-c51-1",
+     "type": "wrong_assumption",
+     "question": "رسوم جواز السفر بدل تالف 20 دينار بس صح؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c53",
+   "messages": [
+    {
+     "message_id": "ar-c53-1",
+     "type": "unclear",
+     "question": "قديش الرسوم؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c56",
+   "messages": [
+    {
+     "message_id": "ar-c56-1",
+     "type": "unclear",
+     "question": "بدي أعمل تجديد",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c58",
+   "messages": [
+    {
+     "message_id": "ar-c58-1",
+     "type": "out_of_scope",
+     "question": "كم رسوم تجديد رخصة القيادة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c61",
+   "messages": [
+    {
+     "message_id": "ar-c61-1",
+     "type": "out_of_scope",
+     "question": "إيمتى بيفتح مكتب الأحوال يوم الجمعة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c63",
+   "messages": [
+    {
+     "message_id": "ar-c63-1",
+     "type": "out_of_scope",
+     "question": "كم سعر تذكرة الطيارة من عمان لإسطنبول؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c65",
+   "messages": [
+    {
+     "message_id": "ar-c65-1",
+     "type": "conversation",
+     "question": "ضاع دفتر العائلة تبعنا امبارح",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "ar-c65-2",
+     "type": "conversation",
+     "question": "وقديش بدفع؟",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c01",
+   "messages": [
+    {
+     "message_id": "en-c01-1",
+     "type": "fee_situation",
+     "question": "I'm 35 and my passport expired two months ago. How much is the renewal fee?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c06",
+   "messages": [
+    {
+     "message_id": "en-c06-1",
+     "type": "time",
+     "question": "How many minutes does a passport renewal take?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c09",
+   "messages": [
+    {
+     "message_id": "en-c09-1",
+     "type": "fee_situation",
+     "question": "I'm Jordanian living in Qatar and never had a passport. What is the fee for a first-time passport abroad?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c11",
+   "messages": [
+    {
+     "message_id": "en-c11-1",
+     "type": "places",
+     "question": "Where can I apply for a passport for the first time?",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c12",
+   "messages": [
+    {
+     "message_id": "en-c12-1",
+     "type": "fee",
+     "question": "My smart ID card snapped in half. How much is the replacement for a damaged card?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c14",
+   "messages": [
+    {
+     "message_id": "en-c14-1",
+     "type": "fee_situation",
+     "question": "This is the second time I've lost my passport. How much will it cost this time?",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c18",
+   "messages": [
+    {
+     "message_id": "en-c18-1",
+     "type": "hidden_in_notes",
+     "question": "What happens if a passport was damaged on purpose?",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c22",
+   "messages": [
+    {
+     "message_id": "en-c22-1",
+     "type": "documents",
+     "question": "What documents are required for a first family book after marriage?",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c26",
+   "messages": [
+    {
+     "message_id": "en-c26-1",
+     "type": "hidden_in_notes",
+     "question": "My family book expired. Within how long do I have to renew it?",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c29",
+   "messages": [
+    {
+     "message_id": "en-c29-1",
+     "type": "conditions",
+     "question": "Who is allowed to apply for a lost family book replacement?",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c34",
+   "messages": [
+    {
+     "message_id": "en-c34-1",
+     "type": "hidden_in_notes",
+     "question": "I'm 20 and never got an ID card. Is there a late fine when I get it for the first time?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c40",
+   "messages": [
+    {
+     "message_id": "en-c40-1",
+     "type": "hidden_in_notes",
+     "question": "I reported my lost ID to the police. When can I collect the replacement card?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c41",
+   "messages": [
+    {
+     "message_id": "en-c41-1",
+     "type": "comparison",
+     "question": "Which is faster: renewing a passport or renewing the smart ID card?",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c43",
+   "messages": [
+    {
+     "message_id": "en-c43-1",
+     "type": "comparison",
+     "question": "What's the difference in fees between a damaged passport and a damaged ID card?",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c46",
+   "messages": [
+    {
+     "message_id": "en-c46-1",
+     "type": "comparison",
+     "question": "I lost my passport for the first time and also lost the family book. How much is each?",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c47",
+   "messages": [
+    {
+     "message_id": "en-c47-1",
+     "type": "wrong_assumption",
+     "question": "I'm a married woman. I need my husband's approval to get my first passport, right?",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c49",
+   "messages": [
+    {
+     "message_id": "en-c49-1",
+     "type": "wrong_assumption",
+     "question": "Renewing the family book takes two days, right?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c51",
+   "messages": [
+    {
+     "message_id": "en-c51-1",
+     "type": "wrong_assumption",
+     "question": "A damaged passport replacement is only 20 JD, correct?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c53",
+   "messages": [
+    {
+     "message_id": "en-c53-1",
+     "type": "unclear",
+     "question": "How much are the fees?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c56",
+   "messages": [
+    {
+     "message_id": "en-c56-1",
+     "type": "unclear",
+     "question": "I want to renew.",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c58",
+   "messages": [
+    {
+     "message_id": "en-c58-1",
+     "type": "out_of_scope",
+     "question": "How much is a driving license renewal?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c61",
+   "messages": [
+    {
+     "message_id": "en-c61-1",
+     "type": "out_of_scope",
+     "question": "What time does the civil status office open on Friday?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c63",
+   "messages": [
+    {
+     "message_id": "en-c63-1",
+     "type": "out_of_scope",
+     "question": "How much is a flight ticket from Amman to Istanbul?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c65",
+   "messages": [
+    {
+     "message_id": "en-c65-1",
+     "type": "conversation",
+     "question": "We lost our family book yesterday.",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "en-c65-2",
+     "type": "conversation",
+     "question": "And how much do I pay?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c01",
+   "messages": [
+    {
+     "message_id": "mx-c01-1",
+     "type": "fee_situation",
+     "question": "عمري 35 والـ passport تبعي expired من شهرين، قديش الـ renewal fee؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c06",
+   "messages": [
+    {
+     "message_id": "mx-c06-1",
+     "type": "time",
+     "question": "how many minutes بياخذ تجديد جواز السفر؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c09",
+   "messages": [
+    {
+     "message_id": "mx-c09-1",
+     "type": "fee_situation",
+     "question": "أنا أردني living in Qatar وما عمري طلعت جواز، كم الـ fee لأول جواز من السفارة؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c11",
+   "messages": [
+    {
+     "message_id": "mx-c11-1",
+     "type": "places",
+     "question": "where بقدر أقدم على جواز سفر لأول مرة؟",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c12",
+   "messages": [
+    {
+     "message_id": "mx-c12-1",
+     "type": "fee",
+     "question": "الـ smart card تبعتي انكسرت، قديش fee بدل التالف؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c14",
+   "messages": [
+    {
+     "message_id": "mx-c14-1",
+     "type": "fee_situation",
+     "question": "هاي second time بضيع فيها الجواز، how much هالمرة؟",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c18",
+   "messages": [
+    {
+     "message_id": "mx-c18-1",
+     "type": "hidden_in_notes",
+     "question": "if الجواز تلف on purpose شو بصير؟",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c22",
+   "messages": [
+    {
+     "message_id": "mx-c22-1",
+     "type": "documents",
+     "question": "شو الـ documents المطلوبة لأول دفتر عائلة بعد الزواج؟",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c26",
+   "messages": [
+    {
+     "message_id": "mx-c26-1",
+     "type": "hidden_in_notes",
+     "question": "دفتر العائلة expired، within how long لازم أجدده؟",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c29",
+   "messages": [
+    {
+     "message_id": "mx-c29-1",
+     "type": "conditions",
+     "question": "who مسموح له يقدم على دفتر عائلة بدل فاقد؟",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c34",
+   "messages": [
+    {
+     "message_id": "mx-c34-1",
+     "type": "hidden_in_notes",
+     "question": "عمري 20 وما عمري طلعت ID، في late fine لما أطلعها أول مرة؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c40",
+   "messages": [
+    {
+     "message_id": "mx-c40-1",
+     "type": "hidden_in_notes",
+     "question": "بلغت الـ police إنه هويتي ضاعت، when بقدر أستلم البطاقة الجديدة؟",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c41",
+   "messages": [
+    {
+     "message_id": "mx-c41-1",
+     "type": "comparison",
+     "question": "which is faster: تجديد الجواز ولا تجديد الهوية؟",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c43",
+   "messages": [
+    {
+     "message_id": "mx-c43-1",
+     "type": "comparison",
+     "question": "شو الـ difference بالرسوم بين damaged passport وهوية بدل تالف؟",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c46",
+   "messages": [
+    {
+     "message_id": "mx-c46-1",
+     "type": "comparison",
+     "question": "ضاع الـ passport أول مرة وضاع الـ family book كمان، how much كل واحد؟",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c47",
+   "messages": [
+    {
+     "message_id": "mx-c47-1",
+     "type": "wrong_assumption",
+     "question": "أنا married، صح لازم husband approval عشان أطلع جواز لأول مرة؟",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c49",
+   "messages": [
+    {
+     "message_id": "mx-c49-1",
+     "type": "wrong_assumption",
+     "question": "تجديد دفتر العائلة takes two days صح؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c51",
+   "messages": [
+    {
+     "message_id": "mx-c51-1",
+     "type": "wrong_assumption",
+     "question": "damaged passport replacement بس 20 دينار صح؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c53",
+   "messages": [
+    {
+     "message_id": "mx-c53-1",
+     "type": "unclear",
+     "question": "how much الرسوم؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c56",
+   "messages": [
+    {
+     "message_id": "mx-c56-1",
+     "type": "unclear",
+     "question": "بدي أعمل renewal",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c58",
+   "messages": [
+    {
+     "message_id": "mx-c58-1",
+     "type": "out_of_scope",
+     "question": "how much تجديد رخصة القيادة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c61",
+   "messages": [
+    {
+     "message_id": "mx-c61-1",
+     "type": "out_of_scope",
+     "question": "what time بيفتح مكتب الأحوال يوم الجمعة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c63",
+   "messages": [
+    {
+     "message_id": "mx-c63-1",
+     "type": "out_of_scope",
+     "question": "how much تذكرة الطيارة من عمان لإسطنبول؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c65",
+   "messages": [
+    {
+     "message_id": "mx-c65-1",
+     "type": "conversation",
+     "question": "we lost دفتر العائلة امبارح",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "mx-c65-2",
+     "type": "conversation",
+     "question": "وقديش بدفع؟",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c01",
+   "messages": [
+    {
+     "message_id": "az-c01-1",
+     "type": "fee_situation",
+     "question": "3omri 35 w el jawaz tabi3i montahi mn shahren, 2adesh rsoom el tajdeed?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c06",
+   "messages": [
+    {
+     "message_id": "az-c06-1",
+     "type": "time",
+     "question": "kam da2i2a byakhod tajdeed el jawaz?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c09",
+   "messages": [
+    {
+     "message_id": "az-c09-1",
+     "type": "fee_situation",
+     "question": "ana ordoni 3ayesh b 2a6ar w ma 3omri 6ala3t jawaz, kam rsoom awal marra jawaz mn el safara?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c11",
+   "messages": [
+    {
+     "message_id": "az-c11-1",
+     "type": "places",
+     "question": "wen b2adem 3ala jawaz safar awal marra?",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c12",
+   "messages": [
+    {
+     "message_id": "az-c12-1",
+     "type": "fee",
+     "question": "el beta2a el thakiye tab3ti inkasarat, 2adesh rsoom bdal talef?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c14",
+   "messages": [
+    {
+     "message_id": "az-c14-1",
+     "type": "fee_situation",
+     "question": "hay tani marra bdayya3 el basbor, 2adesh el rsoom hal marra?",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c18",
+   "messages": [
+    {
+     "message_id": "az-c18-1",
+     "type": "hidden_in_notes",
+     "question": "iza el jawaz tilef 3an 2asd shu bseer?",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c22",
+   "messages": [
+    {
+     "message_id": "az-c22-1",
+     "type": "documents",
+     "question": "shu el wathayi2 el ma6looba la awal daftar 3ayle ba3d el zawaj?",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c26",
+   "messages": [
+    {
+     "message_id": "az-c26-1",
+     "type": "hidden_in_notes",
+     "question": "daftar el 3ayle intaha, 5ilal 2adesh lazem ajaddedo?",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c29",
+   "messages": [
+    {
+     "message_id": "az-c29-1",
+     "type": "conditions",
+     "question": "meen msmoo7lo y2adem 6alab daftar 3ayle bdal fa2ed?",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c34",
+   "messages": [
+    {
+     "message_id": "az-c34-1",
+     "type": "hidden_in_notes",
+     "question": "3omri 20 w ma 3omri 6ala3t hawiye, fi 8aramet ta25eer lama a6la3ha awal marra?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c40",
+   "messages": [
+    {
+     "message_id": "az-c40-1",
+     "type": "hidden_in_notes",
+     "question": "ballaght el shor6a enno hawiyti da3at, emta b2dar astalem el beta2a el jdeede?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c41",
+   "messages": [
+    {
+     "message_id": "az-c41-1",
+     "type": "comparison",
+     "question": "ayy wa7ad asra3: tajdeed el jawaz walla tajdeed el hawiye?",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c43",
+   "messages": [
+    {
+     "message_id": "az-c43-1",
+     "type": "comparison",
+     "question": "shu el far2 bl rsoom bain jawaz bdal talef w hawiye bdal talef?",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c46",
+   "messages": [
+    {
+     "message_id": "az-c46-1",
+     "type": "comparison",
+     "question": "da3 jawazi awal marra w da3 daftar el 3ayle kaman, 2adesh rsoom kol wa7ad?",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c47",
+   "messages": [
+    {
+     "message_id": "az-c47-1",
+     "type": "wrong_assumption",
+     "question": "ana mitjawwze, sa7 lazem jozi ywaf2 3shan a6la3 jawaz awal marra?",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c49",
+   "messages": [
+    {
+     "message_id": "az-c49-1",
+     "type": "wrong_assumption",
+     "question": "tajdeed daftar el 3ayle byakhod yomen sa7?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c51",
+   "messages": [
+    {
+     "message_id": "az-c51-1",
+     "type": "wrong_assumption",
+     "question": "rsoom jawaz bdal talef 20 dinar bs sa7?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c53",
+   "messages": [
+    {
+     "message_id": "az-c53-1",
+     "type": "unclear",
+     "question": "2adesh el rsoom?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c56",
+   "messages": [
+    {
+     "message_id": "az-c56-1",
+     "type": "unclear",
+     "question": "bdi a3mal tajdeed",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c58",
+   "messages": [
+    {
+     "message_id": "az-c58-1",
+     "type": "out_of_scope",
+     "question": "kam rsoom tajdeed ro5set el swa2a?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c61",
+   "messages": [
+    {
+     "message_id": "az-c61-1",
+     "type": "out_of_scope",
+     "question": "emta byefta7 maktab el a7wal yom el jom3a?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c63",
+   "messages": [
+    {
+     "message_id": "az-c63-1",
+     "type": "out_of_scope",
+     "question": "kam se3r tathkaret el tayyara mn 3amman la istanbul?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c65",
+   "messages": [
+    {
+     "message_id": "az-c65-1",
+     "type": "conversation",
+     "question": "da3 daftar el 3ayle tab3na mbare7",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "az-c65-2",
+     "type": "conversation",
+     "question": "w 2adesh badfa3?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  }
+ ]
+}

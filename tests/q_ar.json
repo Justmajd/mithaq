@@ -1,0 +1,1329 @@
+{
+ "chats": [
+  {
+   "chat_id": "ar-c01",
+   "messages": [
+    {
+     "message_id": "ar-c01-1",
+     "type": "fee_situation",
+     "question": "عمري 35 وجوازي منتهي من شهرين، قديش رسوم التجديد؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c02",
+   "messages": [
+    {
+     "message_id": "ar-c02-1",
+     "type": "fee_situation",
+     "question": "ابني عمره 13 سنة وجوازه انتهى، كم رسوم تجديده؟",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c03",
+   "messages": [
+    {
+     "message_id": "ar-c03-1",
+     "type": "fee_situation",
+     "question": "أنا مقيم بالإمارات وبدي أجدد جواز سفري من هناك، كم الرسوم؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c04",
+   "messages": [
+    {
+     "message_id": "ar-c04-1",
+     "type": "fee_situation",
+     "question": "جواز سفري لسا ساري بس الصفحات كلها امتلت، كم بكلف تجديده؟",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c05",
+   "messages": [
+    {
+     "message_id": "ar-c05-1",
+     "type": "hidden_in_notes",
+     "question": "إذا جددت الجواز بمكتب الخدمة المستعجلة، في مبلغ زيادة؟",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c06",
+   "messages": [
+    {
+     "message_id": "ar-c06-1",
+     "type": "time",
+     "question": "كم دقيقة بياخذ تجديد جواز السفر؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c07",
+   "messages": [
+    {
+     "message_id": "ar-c07-1",
+     "type": "documents",
+     "question": "كم صورة شخصية لازم أجيب لتجديد الجواز؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c08",
+   "messages": [
+    {
+     "message_id": "ar-c08-1",
+     "type": "fee_situation",
+     "question": "عمري 22 وساكن بالزرقاء، قديش بدفع لأول جواز سفر إلي؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c09",
+   "messages": [
+    {
+     "message_id": "ar-c09-1",
+     "type": "fee_situation",
+     "question": "أنا أردني مقيم بقطر وما عمري طلعت جواز، كم رسوم أول جواز من السفارة؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c10",
+   "messages": [
+    {
+     "message_id": "ar-c10-1",
+     "type": "fee_situation",
+     "question": "بنتي عمرها 8 سنين بدي أطلعلها أول جواز سفر، كم الرسوم؟",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c11",
+   "messages": [
+    {
+     "message_id": "ar-c11-1",
+     "type": "places",
+     "question": "وين بقدم على جواز سفر لأول مرة؟",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c12",
+   "messages": [
+    {
+     "message_id": "ar-c12-1",
+     "type": "fee",
+     "question": "بطاقتي الذكية انكسرت نصين، قديش رسوم بدل التالف؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c13",
+   "messages": [
+    {
+     "message_id": "ar-c13-1",
+     "type": "fee_situation",
+     "question": "أول مرة بضيع جوازي، كم بدفع عشان أطلع بدل فاقد؟",
+     "must": [
+      [
+       "125"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c14",
+   "messages": [
+    {
+     "message_id": "ar-c14-1",
+     "type": "fee_situation",
+     "question": "هاي تاني مرة بضيع فيها جواز السفر، قديش الرسوم هالمرة؟",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c15",
+   "messages": [
+    {
+     "message_id": "ar-c15-1",
+     "type": "documents",
+     "question": "شو الأوراق المطلوبة لجواز سفر بدل فاقد؟ بدي بلاغ من الشرطة؟",
+     "must": [
+      [
+       "بلاغ",
+       "report",
+       "police",
+       "شرطه",
+       "مركز الامني",
+       "المركز الامني"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c16",
+   "messages": [
+    {
+     "message_id": "ar-c16-1",
+     "type": "documents",
+     "question": "سمعت إنه في كفالة مالية لجواز بدل فاقد، قديش قيمتها؟",
+     "must": [
+      [
+       "50"
+      ],
+      [
+       "500"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c17",
+   "messages": [
+    {
+     "message_id": "ar-c17-1",
+     "type": "fee",
+     "question": "جوازي وقعت عليه قهوة وتلف، كم رسوم بدل التالف؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c18",
+   "messages": [
+    {
+     "message_id": "ar-c18-1",
+     "type": "hidden_in_notes",
+     "question": "إذا الجواز تلف بشكل متعمد شو بصير بالمعاملة؟",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c19",
+   "messages": [
+    {
+     "message_id": "ar-c19-1",
+     "type": "documents",
+     "question": "كم صورة بحتاج لجواز سفر بدل تالف؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c20",
+   "messages": [
+    {
+     "message_id": "ar-c20-1",
+     "type": "fee",
+     "question": "قديش رسوم إصدار دفتر العائلة لأول مرة؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c21",
+   "messages": [
+    {
+     "message_id": "ar-c21-1",
+     "type": "fee_situation",
+     "question": "صارلي 5 شهور متزوج وما طلعت دفتر عائلة، في غرامة؟ قديش؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c22",
+   "messages": [
+    {
+     "message_id": "ar-c22-1",
+     "type": "documents",
+     "question": "شو الوثائق المطلوبة لأول دفتر عائلة بعد الزواج؟",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c23",
+   "messages": [
+    {
+     "message_id": "ar-c23-1",
+     "type": "time",
+     "question": "كم بياخذ وقت إصدار دفتر عائلة لأول مرة؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c24",
+   "messages": [
+    {
+     "message_id": "ar-c24-1",
+     "type": "fee_situation",
+     "question": "دفتر العيلة تبعي منتهي، قديش رسوم تجديده؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c25",
+   "messages": [
+    {
+     "message_id": "ar-c25-1",
+     "type": "fee_situation",
+     "question": "بدي أجدد دفتر العائلة مع إنه لسا ما انتهى، كم الرسوم؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c26",
+   "messages": [
+    {
+     "message_id": "ar-c26-1",
+     "type": "hidden_in_notes",
+     "question": "انتهت صلاحية دفتر العائلة، خلال قديش لازم أجدده؟",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c27",
+   "messages": [
+    {
+     "message_id": "ar-c27-1",
+     "type": "places",
+     "question": "أنا عايش بكندا، بقدر أجدد دفتر العائلة من السفارة الأردنية؟",
+     "must": [
+      [
+       "سفار",
+       "embass",
+       "قنصل",
+       "consul"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c28",
+   "messages": [
+    {
+     "message_id": "ar-c28-1",
+     "type": "fee",
+     "question": "ضاع دفتر العائلة، كم رسوم بدل الفاقد؟",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c29",
+   "messages": [
+    {
+     "message_id": "ar-c29-1",
+     "type": "conditions",
+     "question": "مين المسموح له يقدم طلب دفتر عائلة بدل فاقد؟",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c30",
+   "messages": [
+    {
+     "message_id": "ar-c30-1",
+     "type": "hidden_in_notes",
+     "question": "هاي تالت مرة بضيع دفتر العائلة، شو المبلغ اللي بفرضوه؟",
+     "must": [
+      [
+       "50",
+       "خمسين",
+       "fifty"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c31",
+   "messages": [
+    {
+     "message_id": "ar-c31-1",
+     "type": "fee",
+     "question": "دفتر العائلة اتمزق، قديش بدفع لبدل التالف؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c32",
+   "messages": [
+    {
+     "message_id": "ar-c32-1",
+     "type": "documents",
+     "question": "قديش قيمة التعهد الخطي لدفتر العائلة بدل تالف؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c33",
+   "messages": [
+    {
+     "message_id": "ar-c33-1",
+     "type": "fee",
+     "question": "قديش رسوم البطاقة الذكية لأول مرة؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c34",
+   "messages": [
+    {
+     "message_id": "ar-c34-1",
+     "type": "hidden_in_notes",
+     "question": "عمري 20 وما طلعت هوية أبداً، في غرامة تأخير لما أطلعها لأول مرة؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c35",
+   "messages": [
+    {
+     "message_id": "ar-c35-1",
+     "type": "documents",
+     "question": "كم صورة بدها البطاقة الذكية لأول مرة؟",
+     "must": [
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c36",
+   "messages": [
+    {
+     "message_id": "ar-c36-1",
+     "type": "documents",
+     "question": "لازم أعمل فحص زمرة دم عشان أطلع هوية لأول مرة؟",
+     "must": [
+      [
+       "زمره الدم",
+       "blood",
+       "الفحص الطبي"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c37",
+   "messages": [
+    {
+     "message_id": "ar-c37-1",
+     "type": "fee",
+     "question": "كم بتكلف تجديد البطاقة الذكية؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c38",
+   "messages": [
+    {
+     "message_id": "ar-c38-1",
+     "type": "time",
+     "question": "قديش بياخذ وقت تجديد الهوية؟",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c39",
+   "messages": [
+    {
+     "message_id": "ar-c39-1",
+     "type": "fee",
+     "question": "ضاعت بطاقتي الذكية، كم رسوم البدل فاقد؟",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c40",
+   "messages": [
+    {
+     "message_id": "ar-c40-1",
+     "type": "hidden_in_notes",
+     "question": "بلغت الشرطة إنه هويتي ضاعت، إمتى بقدر أستلم البطاقة البديلة؟",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c41",
+   "messages": [
+    {
+     "message_id": "ar-c41-1",
+     "type": "comparison",
+     "question": "أيهما أسرع: تجديد جواز السفر أم تجديد البطاقة الذكية؟",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c42",
+   "messages": [
+    {
+     "message_id": "ar-c42-1",
+     "type": "comparison",
+     "question": "قارن لي رسوم دفتر العائلة بدل فاقد مع رسوم البطاقة الذكية بدل فاقد.",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد",
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c43",
+   "messages": [
+    {
+     "message_id": "ar-c43-1",
+     "type": "comparison",
+     "question": "شو الفرق بالرسوم بين جواز بدل تالف وهوية بدل تالف؟",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c44",
+   "messages": [
+    {
+     "message_id": "ar-c44-1",
+     "type": "comparison",
+     "question": "كم صورة بحتاج لجواز سفر أول مرة وكم صورة للبطاقة الذكية أول مرة؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ],
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة",
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c45",
+   "messages": [
+    {
+     "message_id": "ar-c45-1",
+     "type": "comparison",
+     "question": "قديش رسوم تجديد دفتر العائلة المنتهي وقديش رسوم تجديد الهوية؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c46",
+   "messages": [
+    {
+     "message_id": "ar-c46-1",
+     "type": "comparison",
+     "question": "ضاع جوازي لأول مرة وضاع دفتر العيلة كمان، قديش رسوم كل واحد؟",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c47",
+   "messages": [
+    {
+     "message_id": "ar-c47-1",
+     "type": "wrong_assumption",
+     "question": "أنا متزوجة، صح لازم زوجي يوافق عشان أطلع جواز سفر لأول مرة؟",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c48",
+   "messages": [
+    {
+     "message_id": "ar-c48-1",
+     "type": "wrong_assumption",
+     "question": "بدي أجدد هويتي من السفارة الأردنية بلندن، شو بلزمني؟",
+     "must": [
+      [
+       "مكاتب",
+       "مكتب",
+       "office"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c49",
+   "messages": [
+    {
+     "message_id": "ar-c49-1",
+     "type": "wrong_assumption",
+     "question": "تجديد دفتر العائلة بياخذ يومين صح؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c50",
+   "messages": [
+    {
+     "message_id": "ar-c50-1",
+     "type": "wrong_assumption",
+     "question": "تجديد البطاقة الذكية مجاني صح؟",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c51",
+   "messages": [
+    {
+     "message_id": "ar-c51-1",
+     "type": "wrong_assumption",
+     "question": "رسوم جواز السفر بدل تالف 20 دينار بس صح؟",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c52",
+   "messages": [
+    {
+     "message_id": "ar-c52-1",
+     "type": "wrong_assumption",
+     "question": "ابن أختي عمره 15 وضاعت هويته، بقدر أنا أقدم عنه بوكالة؟",
+     "must": [
+      [
+       "ولي الامر",
+       "guardian",
+       "لا يقبل",
+       "not accepted",
+       "proxy",
+       "power of attorney",
+       "توكيل",
+       "تفويض"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c53",
+   "messages": [
+    {
+     "message_id": "ar-c53-1",
+     "type": "unclear",
+     "question": "قديش الرسوم؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c54",
+   "messages": [
+    {
+     "message_id": "ar-c54-1",
+     "type": "unclear",
+     "question": "شو الأوراق اللي بلزمني؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c55",
+   "messages": [
+    {
+     "message_id": "ar-c55-1",
+     "type": "unclear",
+     "question": "كم بياخذ وقت؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c56",
+   "messages": [
+    {
+     "message_id": "ar-c56-1",
+     "type": "unclear",
+     "question": "بدي أعمل تجديد",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c57",
+   "messages": [
+    {
+     "message_id": "ar-c57-1",
+     "type": "unclear",
+     "question": "ضاع مني، شو أعمل؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c58",
+   "messages": [
+    {
+     "message_id": "ar-c58-1",
+     "type": "out_of_scope",
+     "question": "كم رسوم تجديد رخصة القيادة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c59",
+   "messages": [
+    {
+     "message_id": "ar-c59-1",
+     "type": "out_of_scope",
+     "question": "بدي فيزا لألمانيا، شو المطلوب؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c60",
+   "messages": [
+    {
+     "message_id": "ar-c60-1",
+     "type": "out_of_scope",
+     "question": "كيف بطلع شهادة ميلاد لابني الجديد؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c61",
+   "messages": [
+    {
+     "message_id": "ar-c61-1",
+     "type": "out_of_scope",
+     "question": "إيمتى بيفتح مكتب الأحوال يوم الجمعة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c62",
+   "messages": [
+    {
+     "message_id": "ar-c62-1",
+     "type": "out_of_scope",
+     "question": "كم رسوم تصديق شهادة الجامعة؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c63",
+   "messages": [
+    {
+     "message_id": "ar-c63-1",
+     "type": "out_of_scope",
+     "question": "كم سعر تذكرة الطيارة من عمان لإسطنبول؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c64",
+   "messages": [
+    {
+     "message_id": "ar-c64-1",
+     "type": "out_of_scope",
+     "question": "وين أطيب منسف بإربد؟",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c65",
+   "messages": [
+    {
+     "message_id": "ar-c65-1",
+     "type": "conversation",
+     "question": "ضاع دفتر العائلة تبعنا امبارح",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "ar-c65-2",
+     "type": "conversation",
+     "question": "وقديش بدفع؟",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c66",
+   "messages": [
+    {
+     "message_id": "ar-c66-1",
+     "type": "conversation",
+     "question": "بدي أطلع جواز سفر لأول مرة لبنتي عمرها 10 سنين",
+     "must": [],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    },
+    {
+     "message_id": "ar-c66-2",
+     "type": "conversation",
+     "question": "كم الرسوم إلها؟",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c67",
+   "messages": [
+    {
+     "message_id": "ar-c67-1",
+     "type": "conversation",
+     "question": "عندي سؤال عن البطاقة الذكية",
+     "must": [],
+     "ctx": "empty"
+    },
+    {
+     "message_id": "ar-c67-2",
+     "type": "conversation",
+     "question": "بدل تالف، قديش الرسوم؟",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1329 @@
+{
+ "chats": [
+  {
+   "chat_id": "az-c01",
+   "messages": [
+    {
+     "message_id": "az-c01-1",
+     "type": "fee_situation",
+     "question": "3omri 35 w el jawaz tabi3i montahi mn shahren, 2adesh rsoom el tajdeed?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c02",
+   "messages": [
+    {
+     "message_id": "az-c02-1",
+     "type": "fee_situation",
+     "question": "ibni 3omro 13 w jawazo montahi, kam rsoom tajdeedo?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c03",
+   "messages": [
+    {
+     "message_id": "az-c03-1",
+     "type": "fee_situation",
+     "question": "ana sakin bl emarat w bdi ajadded el jawaz mn hnak, 2adesh el rsoom?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c04",
+   "messages": [
+    {
+     "message_id": "az-c04-1",
+     "type": "fee_situation",
+     "question": "el jawaz lissa sari bs el sf7at kollha mtalat, 2adesh bkalef tajdeedo?",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c05",
+   "messages": [
+    {
+     "message_id": "az-c05-1",
+     "type": "hidden_in_notes",
+     "question": "iza jadadt el jawaz b maktab el 5edme el mista3jle, fi mablagh zyade?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c06",
+   "messages": [
+    {
+     "message_id": "az-c06-1",
+     "type": "time",
+     "question": "kam da2i2a byakhod tajdeed el jawaz?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c07",
+   "messages": [
+    {
+     "message_id": "az-c07-1",
+     "type": "documents",
+     "question": "kam sora shakhsiye lazem ajeeb la tajdeed el jawaz?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c08",
+   "messages": [
+    {
+     "message_id": "az-c08-1",
+     "type": "fee_situation",
+     "question": "3omri 22 w sakin bl zar2a, 2adesh badfa3 la awal jawaz ili?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c09",
+   "messages": [
+    {
+     "message_id": "az-c09-1",
+     "type": "fee_situation",
+     "question": "ana ordoni 3ayesh b 2a6ar w ma 3omri 6ala3t jawaz, kam rsoom awal marra jawaz mn el safara?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c10",
+   "messages": [
+    {
+     "message_id": "az-c10-1",
+     "type": "fee_situation",
+     "question": "binti 3omraha 8 sneen bdi a6la3laha jawaz awal marra, kam el rsoom?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c11",
+   "messages": [
+    {
+     "message_id": "az-c11-1",
+     "type": "places",
+     "question": "wen b2adem 3ala jawaz safar awal marra?",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c12",
+   "messages": [
+    {
+     "message_id": "az-c12-1",
+     "type": "fee",
+     "question": "el beta2a el thakiye tab3ti inkasarat, 2adesh rsoom bdal talef?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c13",
+   "messages": [
+    {
+     "message_id": "az-c13-1",
+     "type": "fee_situation",
+     "question": "awal marra bdayya3 jawazi, kam badfa3 3shan a6la3 bdal fa2ed?",
+     "must": [
+      [
+       "125"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c14",
+   "messages": [
+    {
+     "message_id": "az-c14-1",
+     "type": "fee_situation",
+     "question": "hay tani marra bdayya3 el basbor, 2adesh el rsoom hal marra?",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c15",
+   "messages": [
+    {
+     "message_id": "az-c15-1",
+     "type": "documents",
+     "question": "shu el awra2 el ma6looba la jawaz bdal fa2ed? b7taj balagh mn el shor6a?",
+     "must": [
+      [
+       "بلاغ",
+       "report",
+       "police",
+       "شرطه",
+       "مركز الامني",
+       "المركز الامني"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c16",
+   "messages": [
+    {
+     "message_id": "az-c16-1",
+     "type": "documents",
+     "question": "sme3t fi kafale maliye la jawaz bdal fa2ed, 2adesh 2eemet-ha?",
+     "must": [
+      [
+       "50"
+      ],
+      [
+       "500"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c17",
+   "messages": [
+    {
+     "message_id": "az-c17-1",
+     "type": "fee",
+     "question": "w2e3 2ahwe 3al jawaz w sar talef, kam rsoom bdal el talef?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c18",
+   "messages": [
+    {
+     "message_id": "az-c18-1",
+     "type": "hidden_in_notes",
+     "question": "iza el jawaz tilef 3an 2asd shu bseer?",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c19",
+   "messages": [
+    {
+     "message_id": "az-c19-1",
+     "type": "documents",
+     "question": "kam sora b7taj la jawaz bdal talef?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c20",
+   "messages": [
+    {
+     "message_id": "az-c20-1",
+     "type": "fee",
+     "question": "2adesh rsoom daftar el 3ayle awal marra?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c21",
+   "messages": [
+    {
+     "message_id": "az-c21-1",
+     "type": "fee_situation",
+     "question": "sarli 5 shhoor mitjawwez w ma 6ala3t daftar 3ayle, fi 8arame? 2adesh?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c22",
+   "messages": [
+    {
+     "message_id": "az-c22-1",
+     "type": "documents",
+     "question": "shu el wathayi2 el ma6looba la awal daftar 3ayle ba3d el zawaj?",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c23",
+   "messages": [
+    {
+     "message_id": "az-c23-1",
+     "type": "time",
+     "question": "kam byakhod wa2t isdar daftar 3ayle awal marra?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c24",
+   "messages": [
+    {
+     "message_id": "az-c24-1",
+     "type": "fee_situation",
+     "question": "daftar el 3ayle tab3i montahi, 2adesh rsoom tajdeedo?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c25",
+   "messages": [
+    {
+     "message_id": "az-c25-1",
+     "type": "fee_situation",
+     "question": "bdi ajadded daftar el 3ayle ma3 enno lissa mish montahi, kam el rsoom?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c26",
+   "messages": [
+    {
+     "message_id": "az-c26-1",
+     "type": "hidden_in_notes",
+     "question": "daftar el 3ayle intaha, 5ilal 2adesh lazem ajaddedo?",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c27",
+   "messages": [
+    {
+     "message_id": "az-c27-1",
+     "type": "places",
+     "question": "ana 3ayesh b canada, b2dar ajadded daftar el 3ayle mn el safara el ordoniye?",
+     "must": [
+      [
+       "سفار",
+       "embass",
+       "قنصل",
+       "consul"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c28",
+   "messages": [
+    {
+     "message_id": "az-c28-1",
+     "type": "fee",
+     "question": "da3 daftar el 3ayle, kam rsoom bdal fa2ed?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c29",
+   "messages": [
+    {
+     "message_id": "az-c29-1",
+     "type": "conditions",
+     "question": "meen msmoo7lo y2adem 6alab daftar 3ayle bdal fa2ed?",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c30",
+   "messages": [
+    {
+     "message_id": "az-c30-1",
+     "type": "hidden_in_notes",
+     "question": "hay talet marra bndayya3 daftar el 3ayle, shu el mablagh elli bfrdoo?",
+     "must": [
+      [
+       "50",
+       "خمسين",
+       "fifty"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c31",
+   "messages": [
+    {
+     "message_id": "az-c31-1",
+     "type": "fee",
+     "question": "daftar el 3ayle tmazza2, 2adesh badfa3 la bdal talef?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c32",
+   "messages": [
+    {
+     "message_id": "az-c32-1",
+     "type": "documents",
+     "question": "2adesh 2eemet el ta3ahhod el 5a66i la daftar 3ayle bdal talef?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c33",
+   "messages": [
+    {
+     "message_id": "az-c33-1",
+     "type": "fee",
+     "question": "2adesh rsoom el beta2a el thakiye awal marra?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c34",
+   "messages": [
+    {
+     "message_id": "az-c34-1",
+     "type": "hidden_in_notes",
+     "question": "3omri 20 w ma 3omri 6ala3t hawiye, fi 8aramet ta25eer lama a6la3ha awal marra?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c35",
+   "messages": [
+    {
+     "message_id": "az-c35-1",
+     "type": "documents",
+     "question": "kam sora bad-ha el beta2a el thakiye awal marra?",
+     "must": [
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c36",
+   "messages": [
+    {
+     "message_id": "az-c36-1",
+     "type": "documents",
+     "question": "lazem a3mal fa7s zomret dam 3shan a6la3 hawiye awal marra?",
+     "must": [
+      [
+       "زمره الدم",
+       "blood",
+       "الفحص الطبي"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c37",
+   "messages": [
+    {
+     "message_id": "az-c37-1",
+     "type": "fee",
+     "question": "kam btkalef tajdeed el beta2a el thakiye?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c38",
+   "messages": [
+    {
+     "message_id": "az-c38-1",
+     "type": "time",
+     "question": "2adesh byakhod wa2t tajdeed el hawiye?",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c39",
+   "messages": [
+    {
+     "message_id": "az-c39-1",
+     "type": "fee",
+     "question": "da3at beta2ti el thakiye, kam rsoom el bdal fa2ed?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c40",
+   "messages": [
+    {
+     "message_id": "az-c40-1",
+     "type": "hidden_in_notes",
+     "question": "ballaght el shor6a enno hawiyti da3at, emta b2dar astalem el beta2a el jdeede?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c41",
+   "messages": [
+    {
+     "message_id": "az-c41-1",
+     "type": "comparison",
+     "question": "ayy wa7ad asra3: tajdeed el jawaz walla tajdeed el hawiye?",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c42",
+   "messages": [
+    {
+     "message_id": "az-c42-1",
+     "type": "comparison",
+     "question": "2arenli rsoom daftar el 3ayle bdal fa2ed ma3 rsoom el beta2a el thakiye bdal fa2ed",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد",
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c43",
+   "messages": [
+    {
+     "message_id": "az-c43-1",
+     "type": "comparison",
+     "question": "shu el far2 bl rsoom bain jawaz bdal talef w hawiye bdal talef?",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c44",
+   "messages": [
+    {
+     "message_id": "az-c44-1",
+     "type": "comparison",
+     "question": "kam sora b7taj la jawaz awal marra w kam sora lal beta2a el thakiye awal marra?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ],
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة",
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c45",
+   "messages": [
+    {
+     "message_id": "az-c45-1",
+     "type": "comparison",
+     "question": "2adesh rsoom tajdeed daftar el 3ayle el montahi w 2adesh tajdeed el hawiye?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c46",
+   "messages": [
+    {
+     "message_id": "az-c46-1",
+     "type": "comparison",
+     "question": "da3 jawazi awal marra w da3 daftar el 3ayle kaman, 2adesh rsoom kol wa7ad?",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c47",
+   "messages": [
+    {
+     "message_id": "az-c47-1",
+     "type": "wrong_assumption",
+     "question": "ana mitjawwze, sa7 lazem jozi ywaf2 3shan a6la3 jawaz awal marra?",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c48",
+   "messages": [
+    {
+     "message_id": "az-c48-1",
+     "type": "wrong_assumption",
+     "question": "bdi ajadded hawiyti mn el safara el ordoniye b london, shu blzamni?",
+     "must": [
+      [
+       "مكاتب",
+       "مكتب",
+       "office"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c49",
+   "messages": [
+    {
+     "message_id": "az-c49-1",
+     "type": "wrong_assumption",
+     "question": "tajdeed daftar el 3ayle byakhod yomen sa7?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c50",
+   "messages": [
+    {
+     "message_id": "az-c50-1",
+     "type": "wrong_assumption",
+     "question": "tajdeed el beta2a el thakiye majjani sa7?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c51",
+   "messages": [
+    {
+     "message_id": "az-c51-1",
+     "type": "wrong_assumption",
+     "question": "rsoom jawaz bdal talef 20 dinar bs sa7?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c52",
+   "messages": [
+    {
+     "message_id": "az-c52-1",
+     "type": "wrong_assumption",
+     "question": "ibn o5ti 3omro 15 w da3at hawiyto, b2dar ana a2adem 3anno b wakale?",
+     "must": [
+      [
+       "ولي الامر",
+       "guardian",
+       "لا يقبل",
+       "not accepted",
+       "proxy",
+       "power of attorney",
+       "توكيل",
+       "تفويض"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c53",
+   "messages": [
+    {
+     "message_id": "az-c53-1",
+     "type": "unclear",
+     "question": "2adesh el rsoom?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c54",
+   "messages": [
+    {
+     "message_id": "az-c54-1",
+     "type": "unclear",
+     "question": "shu el awra2 elli blzamni?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c55",
+   "messages": [
+    {
+     "message_id": "az-c55-1",
+     "type": "unclear",
+     "question": "kam byakhod wa2t?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c56",
+   "messages": [
+    {
+     "message_id": "az-c56-1",
+     "type": "unclear",
+     "question": "bdi a3mal tajdeed",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c57",
+   "messages": [
+    {
+     "message_id": "az-c57-1",
+     "type": "unclear",
+     "question": "da3 mni, shu a3mal?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c58",
+   "messages": [
+    {
+     "message_id": "az-c58-1",
+     "type": "out_of_scope",
+     "question": "kam rsoom tajdeed ro5set el swa2a?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c59",
+   "messages": [
+    {
+     "message_id": "az-c59-1",
+     "type": "out_of_scope",
+     "question": "bdi fiza la almanya, shu el ma6loob?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c60",
+   "messages": [
+    {
+     "message_id": "az-c60-1",
+     "type": "out_of_scope",
+     "question": "kif ba6la3 shahadet milad la ibni?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c61",
+   "messages": [
+    {
+     "message_id": "az-c61-1",
+     "type": "out_of_scope",
+     "question": "emta byefta7 maktab el a7wal yom el jom3a?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c62",
+   "messages": [
+    {
+     "message_id": "az-c62-1",
+     "type": "out_of_scope",
+     "question": "kam rsoom tasdee2 shahadet el jam3a?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c63",
+   "messages": [
+    {
+     "message_id": "az-c63-1",
+     "type": "out_of_scope",
+     "question": "kam se3r tathkaret el tayyara mn 3amman la istanbul?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c64",
+   "messages": [
+    {
+     "message_id": "az-c64-1",
+     "type": "out_of_scope",
+     "question": "wen a6yab mansaf b irbid?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c65",
+   "messages": [
+    {
+     "message_id": "az-c65-1",
+     "type": "conversation",
+     "question": "da3 daftar el 3ayle tab3na mbare7",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "az-c65-2",
+     "type": "conversation",
+     "question": "w 2adesh badfa3?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c66",
+   "messages": [
+    {
+     "message_id": "az-c66-1",
+     "type": "conversation",
+     "question": "bdi a6la3 jawaz awal marra la binti 3omraha 10",
+     "must": [],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    },
+    {
+     "message_id": "az-c66-2",
+     "type": "conversation",
+     "question": "kam el rsoom ilha?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c67",
+   "messages": [
+    {
+     "message_id": "az-c67-1",
+     "type": "conversation",
+     "question": "3indi so2al 3an el beta2a el thakiye",
+     "must": [],
+     "ctx": "empty"
+    },
+    {
+     "message_id": "az-c67-2",
+     "type": "conversation",
+     "question": "bdal talef, 2adesh el rsoom?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  }
+ ]
+}

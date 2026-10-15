@@ -1,0 +1,1329 @@
+{
+ "chats": [
+  {
+   "chat_id": "en-c01",
+   "messages": [
+    {
+     "message_id": "en-c01-1",
+     "type": "fee_situation",
+     "question": "I'm 35 and my passport expired two months ago. How much is the renewal fee?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c02",
+   "messages": [
+    {
+     "message_id": "en-c02-1",
+     "type": "fee_situation",
+     "question": "My son is 13 and his passport expired, how much does renewing it cost?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c03",
+   "messages": [
+    {
+     "message_id": "en-c03-1",
+     "type": "fee_situation",
+     "question": "I live in the UAE and want to renew my Jordanian passport from there. What's the fee?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c04",
+   "messages": [
+    {
+     "message_id": "en-c04-1",
+     "type": "fee_situation",
+     "question": "My passport is still valid but all the pages are full. How much to renew it?",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c05",
+   "messages": [
+    {
+     "message_id": "en-c05-1",
+     "type": "hidden_in_notes",
+     "question": "Is there an extra charge if I renew my passport at the urgent service office?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c06",
+   "messages": [
+    {
+     "message_id": "en-c06-1",
+     "type": "time",
+     "question": "How many minutes does a passport renewal take?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c07",
+   "messages": [
+    {
+     "message_id": "en-c07-1",
+     "type": "documents",
+     "question": "How many personal photos do I need to bring to renew my passport?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c08",
+   "messages": [
+    {
+     "message_id": "en-c08-1",
+     "type": "fee_situation",
+     "question": "I'm 22 and live in Zarqa. How much do I pay for my first passport?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c09",
+   "messages": [
+    {
+     "message_id": "en-c09-1",
+     "type": "fee_situation",
+     "question": "I'm Jordanian living in Qatar and never had a passport. What is the fee for a first-time passport abroad?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c10",
+   "messages": [
+    {
+     "message_id": "en-c10-1",
+     "type": "fee_situation",
+     "question": "My daughter is 8 and I want to get her first passport. What are the fees?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c11",
+   "messages": [
+    {
+     "message_id": "en-c11-1",
+     "type": "places",
+     "question": "Where can I apply for a passport for the first time?",
+     "must": [
+      [
+       "مكاتب",
+       "office",
+       "مكتب"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c12",
+   "messages": [
+    {
+     "message_id": "en-c12-1",
+     "type": "fee",
+     "question": "My smart ID card snapped in half. How much is the replacement for a damaged card?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c13",
+   "messages": [
+    {
+     "message_id": "en-c13-1",
+     "type": "fee_situation",
+     "question": "I lost my passport for the first time ever. How much is a lost passport replacement?",
+     "must": [
+      [
+       "125"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c14",
+   "messages": [
+    {
+     "message_id": "en-c14-1",
+     "type": "fee_situation",
+     "question": "This is the second time I've lost my passport. How much will it cost this time?",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c15",
+   "messages": [
+    {
+     "message_id": "en-c15-1",
+     "type": "documents",
+     "question": "What documents do I need for a lost passport replacement? Do I need a police report?",
+     "must": [
+      [
+       "بلاغ",
+       "report",
+       "police",
+       "شرطه",
+       "مركز الامني",
+       "المركز الامني"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c16",
+   "messages": [
+    {
+     "message_id": "en-c16-1",
+     "type": "documents",
+     "question": "I heard there's a financial guarantee for a lost passport. How much is it?",
+     "must": [
+      [
+       "50"
+      ],
+      [
+       "500"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c17",
+   "messages": [
+    {
+     "message_id": "en-c17-1",
+     "type": "fee",
+     "question": "I spilled coffee on my passport and it's damaged. What's the fee for a damaged passport?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c18",
+   "messages": [
+    {
+     "message_id": "en-c18-1",
+     "type": "hidden_in_notes",
+     "question": "What happens if a passport was damaged on purpose?",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c19",
+   "messages": [
+    {
+     "message_id": "en-c19-1",
+     "type": "documents",
+     "question": "How many photos are required for a damaged passport replacement?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c20",
+   "messages": [
+    {
+     "message_id": "en-c20-1",
+     "type": "fee",
+     "question": "How much does it cost to issue a family book for the first time?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c21",
+   "messages": [
+    {
+     "message_id": "en-c21-1",
+     "type": "fee_situation",
+     "question": "I've been married 5 months and never got a family book. Is there a fine for the first one? How much?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c22",
+   "messages": [
+    {
+     "message_id": "en-c22-1",
+     "type": "documents",
+     "question": "What documents are required for a first family book after marriage?",
+     "must": [
+      [
+       "شهاده الزواج",
+       "عقد الزواج",
+       "marriage certificate",
+       "marriage contract"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c23",
+   "messages": [
+    {
+     "message_id": "en-c23-1",
+     "type": "time",
+     "question": "How long does it take to get a family book for the first time?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c24",
+   "messages": [
+    {
+     "message_id": "en-c24-1",
+     "type": "fee_situation",
+     "question": "My family book has expired. How much is the renewal?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c25",
+   "messages": [
+    {
+     "message_id": "en-c25-1",
+     "type": "fee_situation",
+     "question": "I want to renew my family book even though it hasn't expired yet. What's the fee?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c26",
+   "messages": [
+    {
+     "message_id": "en-c26-1",
+     "type": "hidden_in_notes",
+     "question": "My family book expired. Within how long do I have to renew it?",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c27",
+   "messages": [
+    {
+     "message_id": "en-c27-1",
+     "type": "places",
+     "question": "I live in Canada. Can I renew my family book at the Jordanian embassy?",
+     "must": [
+      [
+       "سفار",
+       "embass",
+       "قنصل",
+       "consul"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c28",
+   "messages": [
+    {
+     "message_id": "en-c28-1",
+     "type": "fee",
+     "question": "We lost our family book. What is the fee for a lost family book?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c29",
+   "messages": [
+    {
+     "message_id": "en-c29-1",
+     "type": "conditions",
+     "question": "Who is allowed to apply for a lost family book replacement?",
+     "must": [
+      [
+       "رب الاسره",
+       "head of"
+      ],
+      [
+       "الزوجه",
+       "wife",
+       "spouse",
+       "زوجه"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c30",
+   "messages": [
+    {
+     "message_id": "en-c30-1",
+     "type": "hidden_in_notes",
+     "question": "This is the third time we've lost the family book. What amount do they charge?",
+     "must": [
+      [
+       "50",
+       "خمسين",
+       "fifty"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c31",
+   "messages": [
+    {
+     "message_id": "en-c31-1",
+     "type": "fee",
+     "question": "Our family book got torn. How much do I pay for a damaged family book replacement?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c32",
+   "messages": [
+    {
+     "message_id": "en-c32-1",
+     "type": "documents",
+     "question": "What is the value of the written pledge for a damaged family book?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c33",
+   "messages": [
+    {
+     "message_id": "en-c33-1",
+     "type": "fee",
+     "question": "How much is the smart ID card for the first time?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c34",
+   "messages": [
+    {
+     "message_id": "en-c34-1",
+     "type": "hidden_in_notes",
+     "question": "I'm 20 and never got an ID card. Is there a late fine when I get it for the first time?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c35",
+   "messages": [
+    {
+     "message_id": "en-c35-1",
+     "type": "documents",
+     "question": "How many photos does a first-time smart ID card need?",
+     "must": [
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c36",
+   "messages": [
+    {
+     "message_id": "en-c36-1",
+     "type": "documents",
+     "question": "Do I need a blood type test to get my ID card for the first time?",
+     "must": [
+      [
+       "زمره الدم",
+       "blood",
+       "الفحص الطبي"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c37",
+   "messages": [
+    {
+     "message_id": "en-c37-1",
+     "type": "fee",
+     "question": "How much does it cost to renew the smart ID card?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c38",
+   "messages": [
+    {
+     "message_id": "en-c38-1",
+     "type": "time",
+     "question": "How long does an ID card renewal take?",
+     "must": [
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c39",
+   "messages": [
+    {
+     "message_id": "en-c39-1",
+     "type": "fee",
+     "question": "I lost my smart ID card. What's the fee for a replacement?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c40",
+   "messages": [
+    {
+     "message_id": "en-c40-1",
+     "type": "hidden_in_notes",
+     "question": "I reported my lost ID to the police. When can I collect the replacement card?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c41",
+   "messages": [
+    {
+     "message_id": "en-c41-1",
+     "type": "comparison",
+     "question": "Which is faster: renewing a passport or renewing the smart ID card?",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c42",
+   "messages": [
+    {
+     "message_id": "en-c42-1",
+     "type": "comparison",
+     "question": "Compare the fee for a lost family book with the fee for a lost smart ID card.",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد",
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c43",
+   "messages": [
+    {
+     "message_id": "en-c43-1",
+     "type": "comparison",
+     "question": "What's the difference in fees between a damaged passport and a damaged ID card?",
+     "must": [
+      [
+       "100"
+      ],
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف",
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c44",
+   "messages": [
+    {
+     "message_id": "en-c44-1",
+     "type": "comparison",
+     "question": "How many photos for a first-time passport and how many for a first-time smart ID card?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ],
+      [
+       "1",
+       "واحده",
+       "one",
+       "single"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة",
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c45",
+   "messages": [
+    {
+     "message_id": "en-c45-1",
+     "type": "comparison",
+     "question": "How much is renewing an expired family book, and how much is renewing the ID card?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c46",
+   "messages": [
+    {
+     "message_id": "en-c46-1",
+     "type": "comparison",
+     "question": "I lost my passport for the first time and also lost the family book. How much is each?",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c47",
+   "messages": [
+    {
+     "message_id": "en-c47-1",
+     "type": "wrong_assumption",
+     "question": "I'm a married woman. I need my husband's approval to get my first passport, right?",
+     "must": [
+      [
+       "دون موافقه",
+       "بدون موافقه",
+       "without",
+       "doesn't need",
+       "does not need",
+       "no need",
+       "not need",
+       "لا تحتاج",
+       "لا يشترط",
+       "لا يلزم",
+       "يحق",
+       "not required",
+       "can get"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c48",
+   "messages": [
+    {
+     "message_id": "en-c48-1",
+     "type": "wrong_assumption",
+     "question": "I want to renew my ID card at the Jordanian embassy in London. What do I need?",
+     "must": [
+      [
+       "مكاتب",
+       "مكتب",
+       "office"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c49",
+   "messages": [
+    {
+     "message_id": "en-c49-1",
+     "type": "wrong_assumption",
+     "question": "Renewing the family book takes two days, right?",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c50",
+   "messages": [
+    {
+     "message_id": "en-c50-1",
+     "type": "wrong_assumption",
+     "question": "Renewing the smart ID card is free, isn't it?",
+     "must": [
+      [
+       "2",
+       "دينارين",
+       "ديناران",
+       "two",
+       "اثنين",
+       "صورتين",
+       "صورتان"
+      ]
+     ],
+     "ctx": [
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c51",
+   "messages": [
+    {
+     "message_id": "en-c51-1",
+     "type": "wrong_assumption",
+     "question": "A damaged passport replacement is only 20 JD, correct?",
+     "must": [
+      [
+       "100"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c52",
+   "messages": [
+    {
+     "message_id": "en-c52-1",
+     "type": "wrong_assumption",
+     "question": "My nephew is 15 and lost his ID card. Can I apply for him with a power of attorney?",
+     "must": [
+      [
+       "ولي الامر",
+       "guardian",
+       "لا يقبل",
+       "not accepted",
+       "proxy",
+       "power of attorney",
+       "توكيل",
+       "تفويض"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c53",
+   "messages": [
+    {
+     "message_id": "en-c53-1",
+     "type": "unclear",
+     "question": "How much are the fees?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c54",
+   "messages": [
+    {
+     "message_id": "en-c54-1",
+     "type": "unclear",
+     "question": "What papers do I need?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c55",
+   "messages": [
+    {
+     "message_id": "en-c55-1",
+     "type": "unclear",
+     "question": "How long does it take?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c56",
+   "messages": [
+    {
+     "message_id": "en-c56-1",
+     "type": "unclear",
+     "question": "I want to renew.",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c57",
+   "messages": [
+    {
+     "message_id": "en-c57-1",
+     "type": "unclear",
+     "question": "I lost it, what should I do?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c58",
+   "messages": [
+    {
+     "message_id": "en-c58-1",
+     "type": "out_of_scope",
+     "question": "How much is a driving license renewal?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c59",
+   "messages": [
+    {
+     "message_id": "en-c59-1",
+     "type": "out_of_scope",
+     "question": "I need a visa to Germany, what is required?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c60",
+   "messages": [
+    {
+     "message_id": "en-c60-1",
+     "type": "out_of_scope",
+     "question": "How do I get a birth certificate for my newborn?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c61",
+   "messages": [
+    {
+     "message_id": "en-c61-1",
+     "type": "out_of_scope",
+     "question": "What time does the civil status office open on Friday?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c62",
+   "messages": [
+    {
+     "message_id": "en-c62-1",
+     "type": "out_of_scope",
+     "question": "How much does it cost to attest a university degree?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c63",
+   "messages": [
+    {
+     "message_id": "en-c63-1",
+     "type": "out_of_scope",
+     "question": "How much is a flight ticket from Amman to Istanbul?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c64",
+   "messages": [
+    {
+     "message_id": "en-c64-1",
+     "type": "out_of_scope",
+     "question": "Where is the best mansaf restaurant in Irbid?",
+     "must": [],
+     "ctx": "empty"
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c65",
+   "messages": [
+    {
+     "message_id": "en-c65-1",
+     "type": "conversation",
+     "question": "We lost our family book yesterday.",
+     "must": [],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    },
+    {
+     "message_id": "en-c65-2",
+     "type": "conversation",
+     "question": "And how much do I pay?",
+     "must": [
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c66",
+   "messages": [
+    {
+     "message_id": "en-c66-1",
+     "type": "conversation",
+     "question": "I want to get a passport for the first time for my daughter, she's 10.",
+     "must": [],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    },
+    {
+     "message_id": "en-c66-2",
+     "type": "conversation",
+     "question": "How much is the fee for her?",
+     "must": [
+      [
+       "25"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c67",
+   "messages": [
+    {
+     "message_id": "en-c67-1",
+     "type": "conversation",
+     "question": "I have a question about the smart ID card.",
+     "must": [],
+     "ctx": "empty"
+    },
+    {
+     "message_id": "en-c67-2",
+     "type": "conversation",
+     "question": "It's damaged, how much is the fee?",
+     "must": [
+      [
+       "3",
+       "ثلاث",
+       "three"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل تالف"
+     ]
+    }
+   ]
+  }
+ ]
+}

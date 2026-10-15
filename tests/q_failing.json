@@ -1,0 +1,325 @@
+{
+ "chats": [
+  {
+   "chat_id": "ar-c01",
+   "messages": [
+    {
+     "message_id": "ar-c01-1",
+     "type": "fee_situation",
+     "question": "عمري 35 وجوازي منتهي من شهرين، قديش رسوم التجديد؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "ar-c40",
+   "messages": [
+    {
+     "message_id": "ar-c40-1",
+     "type": "hidden_in_notes",
+     "question": "بلغت الشرطة إنه هويتي ضاعت، إمتى بقدر أستلم البطاقة البديلة؟",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c01",
+   "messages": [
+    {
+     "message_id": "en-c01-1",
+     "type": "fee_situation",
+     "question": "I'm 35 and my passport expired two months ago. How much is the renewal fee?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c40",
+   "messages": [
+    {
+     "message_id": "en-c40-1",
+     "type": "hidden_in_notes",
+     "question": "I reported my lost ID to the police. When can I collect the replacement card?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "en-c46",
+   "messages": [
+    {
+     "message_id": "en-c46-1",
+     "type": "comparison",
+     "question": "I lost my passport for the first time and also lost the family book. How much is each?",
+     "must": [
+      [
+       "125"
+      ],
+      [
+       "5",
+       "خمس",
+       "five"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد",
+      "دفتر عائلة بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c01",
+   "messages": [
+    {
+     "message_id": "mx-c01-1",
+     "type": "fee_situation",
+     "question": "عمري 35 والـ passport تبعي expired من شهرين، قديش الـ renewal fee؟",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c14",
+   "messages": [
+    {
+     "message_id": "mx-c14-1",
+     "type": "fee_situation",
+     "question": "هاي second time بضيع فيها الجواز، how much هالمرة؟",
+     "must": [
+      [
+       "250"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c34",
+   "messages": [
+    {
+     "message_id": "mx-c34-1",
+     "type": "hidden_in_notes",
+     "question": "عمري 20 وما عمري طلعت ID، في late fine لما أطلعها أول مرة؟",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c40",
+   "messages": [
+    {
+     "message_id": "mx-c40-1",
+     "type": "hidden_in_notes",
+     "question": "بلغت الـ police إنه هويتي ضاعت، when بقدر أستلم البطاقة الجديدة؟",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "mx-c49",
+   "messages": [
+    {
+     "message_id": "mx-c49-1",
+     "type": "wrong_assumption",
+     "question": "تجديد دفتر العائلة takes two days صح؟",
+     "must": [
+      [
+       "45"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c01",
+   "messages": [
+    {
+     "message_id": "az-c01-1",
+     "type": "fee_situation",
+     "question": "3omri 35 w el jawaz tabi3i montahi mn shahren, 2adesh rsoom el tajdeed?",
+     "must": [
+      [
+       "50"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c18",
+   "messages": [
+    {
+     "message_id": "az-c18-1",
+     "type": "hidden_in_notes",
+     "question": "iza el jawaz tilef 3an 2asd shu bseer?",
+     "must": [
+      [
+       "لجنه التحقيق",
+       "investigation"
+      ]
+     ],
+     "ctx": [
+      "جواز سفر بدل تالف"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c26",
+   "messages": [
+    {
+     "message_id": "az-c26-1",
+     "type": "hidden_in_notes",
+     "question": "daftar el 3ayle intaha, 5ilal 2adesh lazem ajaddedo?",
+     "must": [
+      [
+       "ثلاثه اشهر",
+       "3 اشهر",
+       "three months",
+       "3 months",
+       "ثلاث اشهر"
+      ]
+     ],
+     "ctx": [
+      "تجديد دفتر العائلة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c34",
+   "messages": [
+    {
+     "message_id": "az-c34-1",
+     "type": "hidden_in_notes",
+     "question": "3omri 20 w ma 3omri 6ala3t hawiye, fi 8aramet ta25eer lama a6la3ha awal marra?",
+     "must": [
+      [
+       "10",
+       "عشر",
+       "ten"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية لأول مرة"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c40",
+   "messages": [
+    {
+     "message_id": "az-c40-1",
+     "type": "hidden_in_notes",
+     "question": "ballaght el shor6a enno hawiyti da3at, emta b2dar astalem el beta2a el jdeede?",
+     "must": [
+      [
+       "اسبوعين",
+       "two weeks",
+       "2 weeks",
+       "14"
+      ]
+     ],
+     "ctx": [
+      "البطاقة الذكية بدل فاقد"
+     ]
+    }
+   ]
+  },
+  {
+   "chat_id": "az-c41",
+   "messages": [
+    {
+     "message_id": "az-c41-1",
+     "type": "comparison",
+     "question": "ayy wa7ad asra3: tajdeed el jawaz walla tajdeed el hawiye?",
+     "must": [
+      [
+       "45"
+      ],
+      [
+       "20",
+       "عشرين",
+       "twenty"
+      ]
+     ],
+     "ctx": [
+      "تجديد جواز السفر",
+      "تجديد البطاقة الذكية"
+     ]
+    }
+   ]
+  }
+ ]
+}
