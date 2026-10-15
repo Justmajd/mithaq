@@ -1,0 +1,529 @@
+{
+  "chats": [
+    {
+      "chat_id": "en_chat_01",
+      "messages": [
+        {
+          "message_id": "en_01_01",
+          "question": "What are the required documents to issue a Jordanian passport for the first time for someone aged 16 or older?"
+        },
+        {
+          "message_id": "en_01_02",
+          "question": "How much is the official fee for this age group?"
+        },
+        {
+          "message_id": "en_01_03",
+          "question": "What is the fee if the applicant is under 16 years old?"
+        },
+        {
+          "message_id": "en_01_04",
+          "question": "Is written guardian consent mandatory for minors under 18?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_02",
+      "messages": [
+        {
+          "message_id": "en_02_01",
+          "question": "How much is the renewal fee for an expired regular passport inside Jordan?"
+        },
+        {
+          "message_id": "en_02_02",
+          "question": "If the passport has full pages before its expiration, what is the fee?"
+        },
+        {
+          "message_id": "en_02_03",
+          "question": "Where can a Jordanian citizen living abroad submit the renewal application?"
+        },
+        {
+          "message_id": "en_02_04",
+          "question": "How long does it take to process passport renewal at department offices?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_03",
+      "messages": [
+        {
+          "message_id": "en_03_01",
+          "question": "What is the fee for issuing a replacement for a lost passport for the first time?"
+        },
+        {
+          "message_id": "en_03_02",
+          "question": "What is the fee if the passport is lost for the second time or more?"
+        },
+        {
+          "message_id": "en_03_03",
+          "question": "How much is the fee for issuing a replacement for a damaged passport?"
+        },
+        {
+          "message_id": "en_03_04",
+          "question": "Which service has higher fees: replacement for damaged passport or replacement for lost passport for the first time?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_04",
+      "messages": [
+        {
+          "message_id": "en_04_01",
+          "question": "What are the conditions and documents required to issue a smart ID card for the first time at age 16?"
+        },
+        {
+          "message_id": "en_04_02",
+          "question": "What documents must be submitted for the first smart ID card?"
+        },
+        {
+          "message_id": "en_04_03",
+          "question": "What is the official fee for issuing the smart ID card for the first time?"
+        },
+        {
+          "message_id": "en_04_04",
+          "question": "How long does it take to issue and receive the smart ID card?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_05",
+      "messages": [
+        {
+          "message_id": "en_05_01",
+          "question": "How much does it cost to renew an expired smart ID card?"
+        },
+        {
+          "message_id": "en_05_02",
+          "question": "What is the fee for a replacement damaged smart ID card if broken?"
+        },
+        {
+          "message_id": "en_05_03",
+          "question": "How much is the fee for issuing a replacement for a lost smart ID card?"
+        },
+        {
+          "message_id": "en_05_04",
+          "question": "What documents are required to apply for a lost smart ID card replacement?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_06",
+      "messages": [
+        {
+          "message_id": "en_06_01",
+          "question": "What documents are needed to issue a family book for the first time after marriage?"
+        },
+        {
+          "message_id": "en_06_02",
+          "question": "How much is the fee to issue a family book for the first time within the legal deadline?"
+        },
+        {
+          "message_id": "en_06_03",
+          "question": "If I apply 4 months after getting married, what is the total cost including the late penalty fee?"
+        },
+        {
+          "message_id": "en_06_04",
+          "question": "What is the legal grace period allowed before a late fee is applied?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_07",
+      "messages": [
+        {
+          "message_id": "en_07_01",
+          "question": "How much does it cost to renew a family book when it is completely full of children names?"
+        },
+        {
+          "message_id": "en_07_02",
+          "question": "What is the fee for issuing a replacement for a lost family book?"
+        },
+        {
+          "message_id": "en_07_03",
+          "question": "How much is the fee for a replacement for a damaged family book?"
+        },
+        {
+          "message_id": "en_07_04",
+          "question": "Which is more expensive: a replacement for a lost family book or a damaged family book?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_08",
+      "messages": [
+        {
+          "message_id": "en_08_01",
+          "question": "In the event of the father death, is the widow entitled to a family book in her name?"
+        },
+        {
+          "message_id": "en_08_02",
+          "question": "If both the father and mother have passed away, who becomes the head of the family in the family book?"
+        },
+        {
+          "message_id": "en_08_03",
+          "question": "What are the rules if the eldest child is married?"
+        },
+        {
+          "message_id": "en_08_04",
+          "question": "What is the fee for issuing a family book in this case?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_09",
+      "messages": [
+        {
+          "message_id": "en_09_01",
+          "question": "Is husband written consent required for a Jordanian wife to obtain a passport?"
+        },
+        {
+          "message_id": "en_09_02",
+          "question": "Can a citizen renew their passport if there are two years of validity remaining without any travel reason?"
+        },
+        {
+          "message_id": "en_09_03",
+          "question": "Do I need a criminal record clearance certificate to issue a smart ID card for the first time?"
+        },
+        {
+          "message_id": "en_09_04",
+          "question": "Is a citizen exempt from lost ID card fees if they bring a police report?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_10",
+      "messages": [
+        {
+          "message_id": "en_10_01",
+          "question": "How many personal photos are required to issue a passport for the first time?"
+        },
+        {
+          "message_id": "en_10_02",
+          "question": "How many personal photos are needed for passport renewal?"
+        },
+        {
+          "message_id": "en_10_03",
+          "question": "How many photos are required to issue a smart ID card for minors under 18?"
+        },
+        {
+          "message_id": "en_10_04",
+          "question": "Are personal photos required when issuing a family book?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_11",
+      "messages": [
+        {
+          "message_id": "en_11_01",
+          "question": "How can I attest my university degree from the Ministry of Higher Education?"
+        },
+        {
+          "message_id": "en_11_02",
+          "question": "What are the fees for renewing a driver license at the traffic department?"
+        },
+        {
+          "message_id": "en_11_03",
+          "question": "How much is the municipal property tax for residential buildings in Amman?"
+        },
+        {
+          "message_id": "en_11_04",
+          "question": "What are the best flight booking options to Dubai via Royal Jordanian?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_12",
+      "messages": [
+        {
+          "message_id": "en_12_01",
+          "question": "I want to renew my official document, what are the requirements and fees?"
+        },
+        {
+          "message_id": "en_12_02",
+          "question": "I lost my document, what legal procedure should I follow?"
+        },
+        {
+          "message_id": "en_12_03",
+          "question": "How long does the service take at government offices?"
+        },
+        {
+          "message_id": "en_12_04",
+          "question": "What is the total fee required for issuing for the first time?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_13",
+      "messages": [
+        {
+          "message_id": "en_13_01",
+          "question": "Do passport renewal fees differ if the passport is valid for more than 180 days?"
+        },
+        {
+          "message_id": "en_13_02",
+          "question": "How much is the renewal fee if the remaining validity is more than 180 days?"
+        },
+        {
+          "message_id": "en_13_03",
+          "question": "What is the validity period of a passport granted to persons under 16 years old?"
+        },
+        {
+          "message_id": "en_13_04",
+          "question": "What is the passport validity period for someone aged 16 or older?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_14",
+      "messages": [
+        {
+          "message_id": "en_14_01",
+          "question": "What are the conditions and procedures for a divorced woman to obtain an independent family book?"
+        },
+        {
+          "message_id": "en_14_02",
+          "question": "What documents are required for family book separation for a divorced woman?"
+        },
+        {
+          "message_id": "en_14_03",
+          "question": "Can a widowed woman obtain an independent family book?"
+        },
+        {
+          "message_id": "en_14_04",
+          "question": "What is the fee for separating or issuing a family book in this situation?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_15",
+      "messages": [
+        {
+          "message_id": "en_15_01",
+          "question": "Who are the partner entities involved in issuing a passport for the first time?"
+        },
+        {
+          "message_id": "en_15_02",
+          "question": "What is the role of the Jordan Armed Forces or Military Service Office in passport transactions?"
+        },
+        {
+          "message_id": "en_15_03",
+          "question": "Does a replacement for a lost passport require security clearance from the Public Security Directorate?"
+        },
+        {
+          "message_id": "en_15_04",
+          "question": "Which security partner is involved in issuing a replacement for a lost smart ID card?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_16",
+      "messages": [
+        {
+          "message_id": "en_16_01",
+          "question": "Is a blood type medical test required when issuing a smart ID card for the first time?"
+        },
+        {
+          "message_id": "en_16_02",
+          "question": "Can blood type be verified based on an old driver license?"
+        },
+        {
+          "message_id": "en_16_03",
+          "question": "Does the smart ID card include an electronic chip to activate digital identity via Sanad app?"
+        },
+        {
+          "message_id": "en_16_04",
+          "question": "Are there extra fees to activate the PIN code or digital chip of the card?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_17",
+      "messages": [
+        {
+          "message_id": "en_17_01",
+          "question": "Can a Jordanian citizen living in the United Kingdom renew their passport at the Jordanian Embassy in London?"
+        },
+        {
+          "message_id": "en_17_02",
+          "question": "Can they also issue a replacement for a lost passport at the embassy?"
+        },
+        {
+          "message_id": "en_17_03",
+          "question": "Can smart ID cards be issued or renewed at embassies and consulates outside Jordan?"
+        },
+        {
+          "message_id": "en_17_04",
+          "question": "Where must a citizen apply for a smart ID card exclusively?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_18",
+      "messages": [
+        {
+          "message_id": "en_18_01",
+          "question": "What is the first step upon arriving at the Civil Status office to issue a smart ID card?"
+        },
+        {
+          "message_id": "en_18_02",
+          "question": "What are the procedures for capturing personal photos and ten fingerprints?"
+        },
+        {
+          "message_id": "en_18_03",
+          "question": "Where are the official fees paid for the smart ID card?"
+        },
+        {
+          "message_id": "en_18_04",
+          "question": "Who is legally authorized to receive the printed smart ID card?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_19",
+      "messages": [
+        {
+          "message_id": "en_19_01",
+          "question": "What is the legal deadline for registering a marriage without incurring a financial penalty?"
+        },
+        {
+          "message_id": "en_19_02",
+          "question": "If 100 days have passed since the marriage contract, how much is the legal late penalty fee?"
+        },
+        {
+          "message_id": "en_19_03",
+          "question": "What becomes the total amount due for the family book including fee and penalty?"
+        },
+        {
+          "message_id": "en_19_04",
+          "question": "If the family book is issued on the 80th day after marriage, is there any penalty fee?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_20",
+      "messages": [
+        {
+          "message_id": "en_20_01",
+          "question": "When is a passport legally considered damaged?"
+        },
+        {
+          "message_id": "en_20_02",
+          "question": "Does tearing of the passport cover or water damage require issuing a replacement for a damaged passport?"
+        },
+        {
+          "message_id": "en_20_03",
+          "question": "Must the old damaged passport be surrendered to the Civil Status Department upon application?"
+        },
+        {
+          "message_id": "en_20_04",
+          "question": "What is the fee for issuing a replacement for a damaged passport?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_21",
+      "messages": [
+        {
+          "message_id": "en_21_01",
+          "question": "What steps should be taken immediately upon losing a smart ID card?"
+        },
+        {
+          "message_id": "en_21_02",
+          "question": "Is a formal police report required when losing a smart ID card?"
+        },
+        {
+          "message_id": "en_21_03",
+          "question": "How much does a replacement for a lost smart ID card cost?"
+        },
+        {
+          "message_id": "en_21_04",
+          "question": "What is the expected turnaround time to receive the replacement card?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_22",
+      "messages": [
+        {
+          "message_id": "en_22_01",
+          "question": "What documents are required to register a newborn in the family book?"
+        },
+        {
+          "message_id": "en_22_02",
+          "question": "How much is the fee to add a newborn child to the family book?"
+        },
+        {
+          "message_id": "en_22_03",
+          "question": "If the family book has no empty pages left, does it need to be renewed?"
+        },
+        {
+          "message_id": "en_22_04",
+          "question": "How much is the renewal fee for a completely full family book?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_23",
+      "messages": [
+        {
+          "message_id": "en_23_01",
+          "question": "Can a citizen apply for passport renewal and first-time smart ID card in the same visit?"
+        },
+        {
+          "message_id": "en_23_02",
+          "question": "What is the combined total fee for renewing an expired passport and issuing a first-time smart ID card?"
+        },
+        {
+          "message_id": "en_23_03",
+          "question": "How many total personal photos should be prepared to cover both services?"
+        },
+        {
+          "message_id": "en_23_04",
+          "question": "What is the processing time for each service at the department?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_24",
+      "messages": [
+        {
+          "message_id": "en_24_01",
+          "question": "Is an independent family book issued to an unmarried single Jordanian citizen?"
+        },
+        {
+          "message_id": "en_24_02",
+          "question": "Who are the eligible beneficiary categories for the family book service?"
+        },
+        {
+          "message_id": "en_24_03",
+          "question": "Where are the official headquarters and service locations of the Civil Status Department located?"
+        },
+        {
+          "message_id": "en_24_04",
+          "question": "Can a Jordanian citizen abroad request a family book through embassies?"
+        }
+      ]
+    },
+    {
+      "chat_id": "en_chat_25",
+      "messages": [
+        {
+          "message_id": "en_25_01",
+          "question": "What is the fee to issue a passport for the first time for a citizen aged 20 years?"
+        },
+        {
+          "message_id": "en_25_02",
+          "question": "What is the fee for a replacement lost smart ID card for the first time?"
+        },
+        {
+          "message_id": "en_25_03",
+          "question": "What is the late penalty fee for issuing a family book after 90 days from marriage?"
+        },
+        {
+          "message_id": "en_25_04",
+          "question": "What is the basic issuance fee for a family book for the first time?"
+        }
+      ]
+    }
+  ]
+}

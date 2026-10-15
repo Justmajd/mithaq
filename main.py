@@ -30,7 +30,9 @@ SERVICE_FILES = {
         "title": "جواز سفر لأول مرة",
         "aliases": [
             "جواز سفر لاول مرة", "جواز سفر اول مرة", "جواز السفر لاول مرة", "جواز السفر اول مرة",
-            "جواز سفر عادي لاول مرة", "جواز سفر جديد", "باسبور اول مرة", "اول جواز سفر"
+            "جواز سفر عادي لاول مرة", "جواز سفر جديد", "باسبور اول مرة", "اول جواز سفر",
+            "passport first issue", "first time passport", "new passport", "apply for passport first time",
+            "issue passport for the first time", "first passport"
         ]
     },
     "passport_renewal": {
@@ -40,7 +42,8 @@ SERVICE_FILES = {
         "title": "تجديد جواز السفر",
         "aliases": [
             "تجديد جواز السفر", "تجديد جواز سفر", "تجديد جواز", "تجديد باسبور", "تجديد الجواز",
-            "باسبور منتهي", "جواز منتهي", "انتهى جوازي", "بدي اجدد جوازي", "اجدد جوازي"
+            "باسبور منتهي", "جواز منتهي", "انتهى جوازي", "بدي اجدد جوازي", "اجدد جوازي", "تجديد باسبوري",
+            "passport renewal", "renew passport", "renewing passport", "expired passport", "renew my passport"
         ]
     },
     "passport_lost": {
@@ -50,7 +53,8 @@ SERVICE_FILES = {
         "title": "جواز سفر بدل فاقد",
         "aliases": [
             "جواز سفر بدل فاقد", "جواز بدل فاقد", "باسبور بدل فاقد", "فقدان جواز", "ضاع جوازي",
-            "فقدت جوازي", "ضيعت باسبوري", "باسبور ضاع"
+            "فقدت جوازي", "ضيعت باسبوري", "باسبور ضاع", "جواز ضايع", "باسبوري ضاع",
+            "lost passport", "passport replacement lost", "lost my passport", "replace lost passport"
         ]
     },
     "passport_damaged": {
@@ -60,7 +64,8 @@ SERVICE_FILES = {
         "title": "جواز سفر بدل تالف",
         "aliases": [
             "جواز سفر بدل تالف", "جواز بدل تالف", "باسبور بدل تالف", "تلف جواز", "جواز تالف",
-            "باسبور تالف", "اهترى جوازي", "باسبور مهتري"
+            "باسبور تالف", "اهترى جوازي", "باسبور مهتري", "جواز مبلول", "انخزق جوازي", "جوازي انبل",
+            "damaged passport", "passport replacement damaged", "mutilated passport", "torn passport", "replace damaged passport"
         ]
     },
     "id_card_first_issue": {
@@ -70,7 +75,10 @@ SERVICE_FILES = {
         "title": "إصدار البطاقة الذكية لأول مرة",
         "aliases": [
             "البطاقة الذكية لاول مرة", "البطاقة الذكية اول مرة", "بطاقة ذكية لاول مرة", "بطاقة ذكية اول مرة",
-            "اصدار البطاقة الذكية", "اصدار هوية", "هوية لاول مرة", "اول هوية", "صار عمري 16", "صار عمري 18"
+            "اصدار البطاقة الذكية", "اصدار هوية", "هوية لاول مرة", "اول هوية", "صار عمري 16", "صار عمري 18",
+            "اطلع هوية لاول مرة", "هوية جديدة", "بطاقة جديدة",
+            "smart id first time", "id card first issue", "issue smart id", "first identity card",
+            "first time id card", "smart id card first issue", "new id card", "turned 16 id"
         ]
     },
     "id_card_renewal": {
@@ -80,7 +88,8 @@ SERVICE_FILES = {
         "title": "تجديد البطاقة الذكية",
         "aliases": [
             "تجديد البطاقة الذكية", "تجديد بطاقة الاحوال", "تجديد الهوية", "هوية منتهية",
-            "بطاقة منتهية", "اجدد هويتي", "تجديد البطاقة"
+            "بطاقة منتهية", "اجدد هويتي", "تجديد البطاقة", "بدي اجدد الهوية", "هويتي منتهية",
+            "renew smart id", "id card renewal", "renew id card", "expired id card", "smart card renewal", "renew my id"
         ]
     },
     "id_card_lost": {
@@ -90,7 +99,8 @@ SERVICE_FILES = {
         "title": "بطاقة ذكية بدل فاقد",
         "aliases": [
             "بطاقة ذكية بدل فاقد", "البطاقة الذكية بدل فاقد", "هوية بدل فاقد", "ضاعت هويتي",
-            "فقدت الهوية", "هوية ضايعة", "فقدان البطاقة الذكية"
+            "فقدت الهوية", "هوية ضايعة", "فقدان البطاقة الذكية", "ضيعت هويتي", "هويتي ضاعت",
+            "lost smart id", "lost id card", "id card replacement lost", "lost my id", "replace lost id"
         ]
     },
     "id_card_damaged": {
@@ -100,7 +110,8 @@ SERVICE_FILES = {
         "title": "بطاقة ذكية بدل تالف",
         "aliases": [
             "بطاقة ذكية بدل تالف", "البطاقة الذكية بدل تالف", "هوية بدل تالف", "هوية مكسورة",
-            "هوية تالفة", "هوية مهترية", "تلف البطاقة الذكية"
+            "هوية تالفة", "هوية مهترية", "تلف البطاقة الذكية", "انكسرت هويتي", "هويتي خربت",
+            "damaged smart id", "damaged id card", "broken id card", "id card replacement damaged", "replace damaged id"
         ]
     },
     "family_book_first_issue": {
@@ -110,7 +121,10 @@ SERVICE_FILES = {
         "title": "إصدار دفتر العائلة لأول مرة",
         "aliases": [
             "دفتر عائلة لاول مرة", "دفتر العائلة لاول مرة", "دفتر عائلة اول مرة", "دفتر العائلة اول مرة",
-            "اصدار دفتر عائلة", "اصدار دفتر العائلة", "دفتر عائلة جديد", "دفتر عيلة اول مرة", "تزوجت وبدي دفتر عائلة"
+            "اصدار دفتر عائلة", "اصدار دفتر العائلة", "دفتر عائلة جديد", "دفتر عيلة اول مرة",
+            "تزوجت وبدي دفتر عائلة", "متزوج جديد وبدي دفتر", "اول دفتر عائلة", "اطلع دفتر عيلة جديد",
+            "family book first time", "issue family book", "first family book", "new family book",
+            "married need family book", "apply for family book first time"
         ]
     },
     "family_book_renewal": {
@@ -119,7 +133,9 @@ SERVICE_FILES = {
         "action": "renewal",
         "title": "تجديد دفتر العائلة",
         "aliases": [
-            "تجديد دفتر العائلة", "تجديد دفتر عائلة", "تجديد دفتر عيلة", "دفتر العائلة مليان", "تجديد الدفتر"
+            "تجديد دفتر العائلة", "تجديد دفتر عائلة", "تجديد دفتر عيلة", "دفتر العائلة مليان",
+            "تجديد الدفتر", "بدي اجدد دفتر العيلة", "دفتر عيلتي تعبى", "اضافة مولود دفتر عائلة",
+            "renew family book", "family book renewal", "full family book", "renew my family book"
         ]
     },
     "family_book_lost": {
@@ -128,7 +144,9 @@ SERVICE_FILES = {
         "action": "lost",
         "title": "دفتر عائلة بدل فاقد",
         "aliases": [
-            "دفتر عائلة بدل فاقد", "دفتر العائلة بدل فاقد", "دفتر عيلة بدل فاقد", "ضاع دفتر العائلة", "فقدان دفتر العائلة"
+            "دفتر عائلة بدل فاقد", "دفتر العائلة بدل فاقد", "دفتر عيلة بدل فاقد", "ضاع دفتر العائلة",
+            "فقدان دفتر العائلة", "ضيعت دفتر العيلة", "دفتر عيلتنا ضاع",
+            "lost family book", "family book replacement lost", "lost my family book", "replace lost family book"
         ]
     },
     "family_book_damaged": {
@@ -137,7 +155,9 @@ SERVICE_FILES = {
         "action": "damaged",
         "title": "دفتر عائلة بدل تالف",
         "aliases": [
-            "دفتر عائلة بدل تالف", "دفتر العائلة بدل تالف", "دفتر عيلة بدل تالف", "دفتر العائلة مهتري", "تلف دفتر العائلة"
+            "دفتر عائلة بدل تالف", "دفتر العائلة بدل تالف", "دفتر عيلة بدل تالف", "دفتر العائلة مهتري",
+            "تلف دفتر العائلة", "انخزق دفتر العيلة", "تبلل دفتر العائلة",
+            "damaged family book", "family book replacement damaged", "torn family book", "mutilated family book"
         ]
     }
 }
@@ -148,18 +168,36 @@ OUT_OF_SCOPE_KEYWORDS = [
     "شهاده جامعي", "جامع", "تعليم عالي", "توجيهي", "معادله شهاد", "تصديق شهاد", "مدرس",
     "رخصه قياد", "رخصه سير", "سواق", "مخالفات", "نقل ملكي", "ترخيص سيار", "مركب",
     "ضريبه", "مسقفات", "بلدي", "كهرباء", "مياه", "ضمان اجتماعي", "تقاعد",
-    "طقس", "مباراه", "مطعم", "منسف", "عاصم"
+    "طقس", "مباراه", "مطعم", "منسف", "عاصم",
+    # English out of scope keywords
+    "flight", "ticket", "hotel", "dubai", "airport", "university", "high school",
+    "tawjihi", "degree", "driving license", "driver license", "driver's license",
+    "traffic fine", "car license", "tax", "weather", "match", "restaurant", "food"
 ]
-
 
 OUT_OF_SCOPE_RESPONSE = (
     "عذراً، لا تتوفر لدي معلومات عن هذا الموضوع. "
     "أستطيع المساعدة في خدمات جواز السفر ودفتر العائلة والبطاقة الذكية فقط."
 )
 
+OUT_OF_SCOPE_RESPONSE_EN = (
+    "Sorry, I do not have information about this topic. "
+    "I can only assist with Jordan Civil Status and Passports Department services (Passports, Smart ID Card, and Family Book)."
+)
+
 UNCLEAR_RESPONSE = (
     "يرجى تحديد الوثيقة أو الخدمة المطلوبة (جواز السفر، أو البطاقة الذكية، أو دفتر العائلة) لنتمكن من تزويدك بالتفاصيل بدقة."
 )
+
+UNCLEAR_RESPONSE_EN = (
+    "Please specify the required document or service (Passport, Smart ID Card, or Family Book) so we can provide accurate details."
+)
+
+def is_english_query(text: str) -> bool:
+    """Detects if query is primarily in English."""
+    en_count = len(re.findall(r"[a-zA-Z]", text))
+    ar_count = len(re.findall(r"[\u0600-\u06FF]", text))
+    return en_count > ar_count
 
 
 class ServiceKB:
@@ -249,22 +287,34 @@ def normalize_arabic(text: str) -> str:
 
 def is_out_of_scope(question: str, prior_services: Optional[List[str]] = None) -> bool:
     norm_q = normalize_arabic(question)
-    for kw in OUT_OF_SCOPE_KEYWORDS:
-        if normalize_arabic(kw) in norm_q:
-            return True
+    lower_q = question.lower()
+    
+    # Core domain check: if user mentions any official doc, NEVER mark as out of scope
+    core_doc_words = [
+        "جواز", "باسبور", "بطاق", "هوي", "دفتر", "ذكيه", "احوال مدني", "رب الاسره",
+        "passport", "smart id", "id card", "family book", "civil status"
+    ]
+    has_core_doc = any(normalize_arabic(w) in norm_q or w.lower() in lower_q for w in core_doc_words)
+
+    if not has_core_doc:
+        for kw in OUT_OF_SCOPE_KEYWORDS:
+            if normalize_arabic(kw) in norm_q or kw.lower() in lower_q:
+                return True
     
     # If there is prior service context in this conversation, it is in-scope
     if prior_services:
         return False
 
     # Check if question has any government document domain keywords
-    doc_keywords = [
-        "جواز", "باسبور", "سفر", "عائل", "عيل", "دفتر", "بطاق", "هوي", "احوال", "ذكيه",
-        "صوره", "رسوم", "وثائق", "شروط", "اجراءات", "رب الاسره", "غرامة", "كفالة", "زمرة الدم",
+    doc_keywords = core_doc_words + [
+        "سفر", "عائل", "عيل", "صوره", "رسوم", "وثائق", "شروط", "اجراءات", "غرامة", "كفالة", "زمرة الدم",
         "سفار", "قنصل", "مكتب", "خدمة", "تجديد", "اجدد", "جدد", "فاقد", "تالف", "اصدار", "اطلع", "مستعجل",
-        "مطلوب", "اوراق", "تزوج", "زواج"
+        "مطلوب", "اوراق", "تزوج", "زواج", "مولود", "طفل", "ابن",
+        # English domain keywords
+        "fee", "fees", "cost", "document", "documents", "photo", "photos", "requirement",
+        "condition", "embassy", "renew", "renewal", "lost", "damaged", "issue", "married", "birth", "newborn"
     ]
-    has_domain_word = any(normalize_arabic(w) in norm_q for w in doc_keywords)
+    has_domain_word = any(normalize_arabic(w) in norm_q or w.lower() in lower_q for w in doc_keywords)
     if not has_domain_word and len(question.strip().split()) > 2:
         return True
     return False
@@ -275,62 +325,93 @@ def is_unclear_question(question: str, prior_services: Optional[List[str]] = Non
     if prior_services:
         return False
     norm_q = normalize_arabic(question)
+    lower_q = question.lower()
     
-    has_doc_type = any(k in norm_q for k in [
-        "جواز", "باسبور", "سفر", "دفتر", "عائل", "عيل", "بطاق", "هوي", "احوال", "ذكيه", "رب الاسره"
-    ])
+    has_doc_type = (
+        any(k in norm_q for k in [
+            "جواز", "باسبور", "سفر", "دفتر", "عائل", "عيل", "بطاق", "هوي", "احوال", "ذكيه", "رب الاسره"
+        ]) or
+        any(k in lower_q for k in [
+            "passport", "id card", "smart id", "identity card", "family book", "civil card"
+        ])
+    )
     if has_doc_type:
         return False
         
     intent_keywords = [
         "اجدد", "تجديد", "منتهي", "خلص",
-        "فاقد", "ضاع", "ضاعت", "ضيعت", "فقدان",
+        "فاقد", "ضاع", "ضاعت", "ضيعت", "فقدان", "فقدت",
         "تالف", "مهتري", "اهتري", "مكسور", "خربان",
         "اصدار", "اطلع", "استخراج", "اعمل", "اول مره",
-        "اوراق", "وثائق", "مطلوب", "يلزم", "بحتاج",
+        "اوراق", "وثائق", "مطلوب", "يلزم", "بحتاج", "اجراءات", "خطوات",
         "رسوم", "سعر", "تكلف", "تكلفة", "بدفع", "كم بكلف",
-        "وين بقدم", "وين اروح", "اماكن", "وقت", "زمن", "يستغرق", "قديش بدها"
+        "وين بقدم", "وين اروح", "اماكن", "وقت", "زمن", "يستغرق", "قديش بدها",
+        # English intents
+        "renew", "renewal", "lost", "damaged", "first time", "issue", "apply",
+        "requirements", "documents", "fees", "cost", "how much", "where to apply", "how long", "procedures", "steps"
     ]
-    return any(k in norm_q for k in intent_keywords)
+    return any(k in norm_q or k in lower_q for k in intent_keywords)
 
 
 def detect_services(question: str, prior_services: List[str] = None) -> List[str]:
     """Identifies which of the 12 services the question refers to."""
     norm_q = normalize_arabic(question)
+    lower_q = question.lower()
     found_services = []
 
     # 1. First, check if exact aliases match anywhere
     for s_key, s_meta in SERVICE_FILES.items():
         for alias in s_meta["aliases"]:
-            if normalize_arabic(alias) in norm_q:
+            if normalize_arabic(alias) in norm_q or alias.lower() in lower_q:
                 if s_key not in found_services:
                     found_services.append(s_key)
 
-    has_comparison = any(k in norm_q for k in ["ايهما", "ايها", "الفرق", "مقارنه", " ولا ", " ام "])
+    has_comparison = (
+        any(k in norm_q for k in ["ايهما", "ايها", "الفرق", "مقارنه", " ولا ", " ام "]) or
+        any(k in lower_q for k in ["which is more expensive", "compare", "difference between", "higher fee", " vs ", " versus "])
+    )
     if found_services and not has_comparison:
         return found_services
 
     # Pre-extract any global doc types in the question
     global_docs = []
-    if any(k in norm_q for k in ["جواز", "باسبور"]):
+    if any(k in norm_q for k in ["جواز", "باسبور"]) or any(k in lower_q for k in ["passport", "passports", "travel document"]):
         global_docs.append("passport")
-    if any(k in norm_q for k in ["دفتر عائل", "دفتر عيل", "العائل", "رب الاسره", "تزوج", "زواج", "عقد زواج"]):
+    if (
+        any(k in norm_q for k in ["دفتر", "عائل", "عيل", "اسره", "اسرة", "تزوج", "زواج", "عقد زواج", "مولود", "ولاده"]) or
+        any(k in lower_q for k in ["family book", "family booklet", "family record", "family card", "newborn"])
+    ):
         global_docs.append("family_book")
-    if any(k in norm_q for k in ["بطاق", "هوي", "احوال مدني", "ذكيه", "زمرة الدم"]):
+    if (
+        any(k in norm_q for k in ["بطاق", "هوي", "ذكيه", "زمرة الدم"]) or
+        any(k in lower_q for k in ["id card", "smart id", "identity card", "civil card", "national id", "smart card"])
+    ):
         global_docs.append("id_card")
 
+    # If general civil status office inquiry without specific doc, check both passport and id
+    if not global_docs and any(k in norm_q for k in ["مكتب الاحوال", "مكاتب الاحوال", "دائره الاحوال", "الاحوال المدني", "civil status office"]):
+        global_docs.append("id_card")
+        global_docs.append("passport")
+
     # 2. Check by clauses to associate doc_type with action correctly (avoids Cartesian explosion)
-    clauses = re.split(r"[،,\n]|(?:\s+(?:و|أو|أم|ولا|مقابل|بينما)\s+)", question)
+    clauses = re.split(r"[،,\n]|(?:\s+(?:و|أو|أم|ولا|مقابل|بينما|and|or|vs|versus|while)\s+)", question)
     
     last_doc = None
     for clause in clauses:
         c_norm = normalize_arabic(clause)
+        c_lower = clause.lower()
         c_docs = []
-        if any(k in c_norm for k in ["جواز", "باسبور"]):
+        if any(k in c_norm for k in ["جواز", "باسبور"]) or any(k in c_lower for k in ["passport", "passports"]):
             c_docs.append("passport")
-        if any(k in c_norm for k in ["دفتر عائل", "دفتر عيل", "العائل", "رب الاسره", "تزوج", "زواج", "عقد زواج"]):
+        if (
+            any(k in c_norm for k in ["دفتر", "عائل", "عيل", "اسره", "اسرة", "تزوج", "زواج", "عقد زواج", "مولود", "ولاده"]) or
+            any(k in c_lower for k in ["family book", "family booklet", "family record", "family card", "newborn"])
+        ):
             c_docs.append("family_book")
-        if any(k in c_norm for k in ["بطاق", "هوي", "احوال مدني", "ذكيه", "زمرة الدم"]):
+        if (
+            any(k in c_norm for k in ["بطاق", "هوي", "ذكيه", "زمرة الدم"]) or
+            any(k in c_lower for k in ["id card", "smart id", "identity card", "civil card", "national id", "smart card"])
+        ):
             c_docs.append("id_card")
 
         if c_docs:
@@ -341,19 +422,21 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
             c_docs = list(global_docs)
 
         c_actions = []
-        if any(k in c_norm for k in ["فاقد", "ضاع", "فقدت", "فقدان", "ضايع"]):
+        if any(k in c_norm for k in ["فاقد", "ضاع", "فقدت", "فقدان", "ضايع"]) or any(k in c_lower for k in ["lost", "loss", "missing"]):
             c_actions.append("lost")
-        if any(k in c_norm for k in ["تالف", "مهتري", "اهتري", "تلف", "مكسور", "خربان"]):
+        if any(k in c_norm for k in ["تالف", "مهتري", "اهتري", "تلف", "مكسور", "خربان", "مبلول", "انكب"]) or any(k in c_lower for k in ["damaged", "damage", "torn", "mutilated", "broken"]):
             c_actions.append("damaged")
-        if any(k in c_norm for k in ["تجديد", "اجدد", "منتهي", "خلص", "باقي عليه", "مستعجل"]):
+        if any(k in c_norm for k in ["تجديد", "اجدد", "منتهي", "خلص", "باقي عليه", "مستعجل", "تعبى", "مليان", "مولود", "اضاف", "اضيف"]) or any(k in c_lower for k in ["renew", "renewal", "renewing", "expired", "re-issue", "full", "newborn", "add child"]):
             c_actions.append("renewal")
         
         has_first = (
             any(k in c_norm for k in ["اول مره", "اول هويه", "صار عمري", "تزوج", "زواج", "عقد زواج", "ما طلعت"]) or
-            ("جديد" in c_norm and "تجديد" not in c_norm and "التجديد" not in c_norm)
+            ("جديد" in c_norm and "تجديد" not in c_norm and "التجديد" not in c_norm) or
+            any(k in c_lower for k in ["first time", "first issue", "first-time", "initial", "turned 16", "turned 18", "got married"]) or
+            ("new" in c_lower and "renew" not in c_lower)
         )
-        has_generic = any(k in c_norm for k in ["اصدار", "اطلع", "استخراج", "اعمل"])
-        if "فاقد" in c_norm:
+        has_generic = any(k in c_norm for k in ["اصدار", "اطلع", "استخراج", "اعمل"]) or any(k in c_lower for k in ["issue", "apply", "get"])
+        if "فاقد" in c_norm or "lost" in c_lower:
             pass  # 'اول مرة' modifies lost, not first_issue
         elif has_first or (has_generic and not c_actions):
             c_actions.append("first_issue")
@@ -371,19 +454,21 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
     # 3. Whole-question fallback
     doc_types = list(global_docs)
     actions = []
-    if any(k in norm_q for k in ["فاقد", "ضاع", "فقدت", "فقدان", "ضايع"]):
+    if any(k in norm_q for k in ["فاقد", "ضاع", "فقدت", "فقدان", "ضايع"]) or any(k in lower_q for k in ["lost", "loss", "missing"]):
         actions.append("lost")
-    if any(k in norm_q for k in ["تالف", "مهتري", "اهتري", "تلف", "مكسور", "خربان"]):
+    if any(k in norm_q for k in ["تالف", "مهتري", "اهتري", "تلف", "مكسور", "خربان", "مبلول", "انكب"]) or any(k in lower_q for k in ["damaged", "damage", "torn", "mutilated", "broken"]):
         actions.append("damaged")
-    if any(k in norm_q for k in ["تجديد", "اجدد", "منتهي", "خلص", "باقي عليه", "مستعجل"]):
+    if any(k in norm_q for k in ["تجديد", "اجدد", "منتهي", "خلص", "باقي عليه", "مستعجل", "تعبى", "مليان", "مولود", "اضاف", "اضيف"]) or any(k in lower_q for k in ["renew", "renewal", "renewing", "expired", "re-issue", "full", "newborn", "add child"]):
         actions.append("renewal")
     
     has_first = (
         any(k in norm_q for k in ["اول مره", "اول هويه", "صار عمري", "تزوج", "زواج", "عقد زواج", "ما طلعت"]) or
-        ("جديد" in norm_q and "تجديد" not in norm_q and "التجديد" not in norm_q)
+        ("جديد" in norm_q and "تجديد" not in norm_q and "التجديد" not in norm_q) or
+        any(k in lower_q for k in ["first time", "first issue", "first-time", "initial", "turned 16", "turned 18", "got married"]) or
+        ("new" in lower_q and "renew" not in lower_q)
     )
-    has_generic = any(k in norm_q for k in ["اصدار", "اطلع", "استخراج", "اعمل"])
-    if "فاقد" in norm_q:
+    has_generic = any(k in norm_q for k in ["اصدار", "اطلع", "استخراج", "اعمل"]) or any(k in lower_q for k in ["issue", "apply", "get"])
+    if "فاقد" in norm_q or "lost" in lower_q:
         pass
     elif has_first or (has_generic and not actions):
         actions.append("first_issue")
@@ -400,7 +485,6 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
         for d in doc_types:
             found_services.append(f"{d}_renewal")
 
-
     # 5. Handle follow-up context (Multi-turn conversational bonus!)
     if not found_services and prior_services:
         found_services = list(prior_services)
@@ -408,36 +492,54 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
     return found_services
 
 
-
 def detect_target_sections(question: str) -> List[str]:
     """Determines which sections of the service file contain the answer."""
     norm_q = normalize_arabic(question)
+    lower_q = question.lower()
     sections = []
 
     # Time / Duration
-    if any(k in norm_q for k in ["وقت", "زمن", "يستغرق", "قديش بدها", "مده", "ساعه", "دقيق"]):
+    if (
+        any(k in norm_q for k in ["وقت", "زمن", "يستغرق", "قديش بدها", "مده", "ساعه", "دقيق"]) or
+        any(k in lower_q for k in ["time", "duration", "how long", "take", "takes", "minutes", "hours", "processing time"])
+    ):
         sections.append("الزمن المستغرق لتقديم الخدمة")
 
     # Location / Places
-    if any(k in norm_q for k in ["وين", "مكان", "اماكن", "سفار", "قنصلي", "مكتب", "مكاتب", "خارج", "برا البلد"]):
+    if (
+        any(k in norm_q for k in ["وين", "مكان", "اماكن", "سفار", "قنصلي", "مكتب", "مكاتب", "خارج", "برا البلد"]) or
+        any(k in lower_q for k in ["where", "location", "locations", "office", "offices", "embassy", "consulate", "abroad", "outside"])
+    ):
         sections.append("أماكن تقديم الخدمة")
 
     # Documents / Requirements / Photos
-    if any(k in norm_q for k in ["اوراق", "وثائق", "مطلوب", "يلزم", "بحتاج", "صور", "صوره شخصي"]):
+    if (
+        any(k in norm_q for k in ["اوراق", "وثائق", "مطلوب", "يلزم", "بحتاج", "صور", "صوره شخصي"]) or
+        any(k in lower_q for k in ["document", "documents", "paper", "papers", "requirement", "requirements", "photo", "photos", "picture", "pictures", "what do i need", "what to bring"])
+    ):
         sections.append("الوثائق المطلوبة للحصول على الخدمة")
 
     # Fees / Cost
-    if any(k in norm_q for k in ["رسوم", "سعر", "تكلف", "تكلفة", "بدفع", "دينار", "قديش بكلف"]):
+    if (
+        any(k in norm_q for k in ["رسوم", "سعر", "تكلف", "تكلفة", "بدفع", "دينار", "قديش بكلف"]) or
+        any(k in lower_q for k in ["fee", "fees", "cost", "price", "how much", "charge", "pay", "dinars", "jod", "expensive"])
+    ):
         sections.append("الرسوم")
         sections.append("ملاحظات")
 
     # Conditions / Age / Rules
-    if any(k in norm_q for k in ["شروط", "شرط", "عمر", "سنه", "قاصر", "زوجه", "زوجها", "موافق", "رب الاسره", "توفي"]):
+    if (
+        any(k in norm_q for k in ["شروط", "شرط", "عمر", "سنه", "قاصر", "زوجه", "زوجها", "موافق", "رب الاسره", "توفي"]) or
+        any(k in lower_q for k in ["condition", "conditions", "eligibility", "eligible", "age", "years old", "minor", "guardian", "wife", "husband", "consent", "approval", "head of family", "deceased"])
+    ):
         sections.append("شروط تقديم الخدمة")
         sections.append("ملاحظات")
 
     # Procedure / Steps
-    if any(k in norm_q for k in ["اجراءات", "خطوات", "دور", "وصل", "شباك", "طريقه"]):
+    if (
+        any(k in norm_q for k in ["اجراءات", "خطوات", "دور", "وصل", "شباك", "طريقه"]) or
+        any(k in lower_q for k in ["step", "steps", "procedure", "procedures", "how to apply", "process"])
+    ):
         sections.append("إجراءات تقديم الخدمة")
 
     if not sections:
@@ -454,6 +556,7 @@ def build_contexts(kb: ServiceKB, service_keys: List[str], target_sections: List
     """
     contexts = []
     norm_q = normalize_arabic(question)
+    lower_q = question.lower()
 
     for s_key in service_keys:
         s_data = kb.services_data.get(s_key)
@@ -475,10 +578,10 @@ def build_contexts(kb: ServiceKB, service_keys: List[str], target_sections: List
                 continue
 
             # If user asks specifically about photo count ("صور شخصية"), extract that line if present
-            if "صور" in norm_q or "صوره" in norm_q:
+            if "صور" in norm_q or "صوره" in norm_q or "photo" in lower_q or "picture" in lower_q:
                 photo_lines = [
                     l.strip() for l in content.splitlines() 
-                    if any(p in l for p in ["صور شخصية", "صورة شخصية", "صور ملونة", "صورة ملونة", "حديثة وملونة"])
+                    if any(p in l for p in ["صور شخصية", "صورة شخصية", "صور ملونة", "صورة ملونة", "حديثة وملونة", "صورة"])
                 ]
                 if photo_lines:
                     snippet = f"{title} - الوثائق المطلوبة: ... " + " ".join(photo_lines)
@@ -513,24 +616,39 @@ def build_contexts(kb: ServiceKB, service_keys: List[str], target_sections: List
 
 
 def generate_answer_via_ollama(question: str, contexts: List[str], model: str = DEFAULT_MODEL) -> str:
-    """Calls Ollama locally to generate an accurate, grounded Arabic answer."""
+    """Calls Ollama locally to generate an accurate, grounded answer (Arabic or English)."""
+    is_en = is_english_query(question)
     if not contexts:
-        return OUT_OF_SCOPE_RESPONSE
+        return OUT_OF_SCOPE_RESPONSE_EN if is_en else OUT_OF_SCOPE_RESPONSE
 
     context_block = "\n".join(f"- {c}" for c in contexts)
-    system_prompt = (
-        "أنت مساعد رسمي موثوق لخدمات دائرة الأحوال المدنية والجوازات الأردنية.\n"
-        "مهمتك: الإجابة على سؤال المواطن فقط وبدقة تامة اعتماداً على السياق الرسمي المرفق أدناه.\n"
-        "تعليمات صارمة:\n"
-        "1. اعتمد حصراً على المعلومات المذكورة في السياق.\n"
-        "2. انقل الأرقام، المدد، المبالغ، والوثائق المطلوبة بدقة تامة دون زيادة أو اختراع.\n"
-        "3. أجب بشكل مباشر وموجز ومحدد دون مقدمات ودون عبارات ختامية مثل 'هل هناك استفسار آخر'.\n"
-        "4. إذا تضمن السؤال افتراضاً خاطئاً (مثل اشتراط موافقة الزوج)، صحح الافتراض استناداً للسياق.\n"
-        "5. إذا كان السؤال مقارنة بين خدمات، اذكر قيمة الرسم لكل خدمة من السياق ثم وضح أيهما أعلى أو أقل وفقاً للأرقام.\n"
-        "6. انتبه لحساب المدد الزمنية بدقة: (الشهر = 30 يوماً، 3 شهور = 90 يوماً، 4 شهور = 120 يوماً وهي أكثر من 90 يوماً، 6 شهور = 180 يوماً)."
-    )
-
-    user_prompt = f"السياق الرسمي:\n{context_block}\n\nسؤال المواطن: {question}\nالجواب المباشر:"
+    
+    if is_en:
+        system_prompt = (
+            "You are an official assistant for the Jordan Civil Status and Passports Department.\n"
+            "Your task: Answer the citizen's inquiry accurately and strictly based on the official context provided below.\n"
+            "Strict Instructions:\n"
+            "1. Rely exclusively on the facts stated in the context.\n"
+            "2. State numbers, fees, time durations, and required documents with 100% precision without adding or inventing anything.\n"
+            "3. Answer directly, concisely, and specifically without introductory pleasantries or closing remarks.\n"
+            "4. If the question contains a false assumption, correct it politely according to the context.\n"
+            "5. If comparing services, state each service fee from context and clarify which is higher/lower.\n"
+            "6. Note time conversions accurately: (1 month = 30 days, 3 months = 90 days, 4 months = 120 days which exceeds 90 days)."
+        )
+        user_prompt = f"Official Context:\n{context_block}\n\nCitizen Question: {question}\nDirect Answer:"
+    else:
+        system_prompt = (
+            "أنت مساعد رسمي موثوق لخدمات دائرة الأحوال المدنية والجوازات الأردنية.\n"
+            "مهمتك: الإجابة على سؤال المواطن فقط وبدقة تامة اعتماداً على السياق الرسمي المرفق أدناه.\n"
+            "تعليمات صارمة:\n"
+            "1. اعتمد حصراً على المعلومات المذكورة في السياق.\n"
+            "2. انقل الأرقام، المدد، المبالغ، والوثائق المطلوبة بدقة تامة دون زيادة أو اختراع.\n"
+            "3. أجب بشكل مباشر وموجز ومحدد دون مقدمات ودون عبارات ختامية مثل 'هل هناك استفسار آخر'.\n"
+            "4. إذا تضمن السؤال افتراضاً خاطئاً (مثل اشتراط موافقة الزوج)، صحح الافتراض استناداً للسياق.\n"
+            "5. إذا كان السؤال مقارنة بين خدمات، اذكر قيمة الرسم لكل خدمة من السياق ثم وضح أيهما أعلى أو أقل وفقاً للأرقام.\n"
+            "6. انتبه لحساب المدد الزمنية بدقة: (الشهر = 30 يوماً، 3 شهور = 90 يوماً، 4 شهور = 120 يوماً وهي أكثر من 90 يوماً، 6 شهور = 180 يوماً)."
+        )
+        user_prompt = f"السياق الرسمي:\n{context_block}\n\nسؤال المواطن: {question}\nالجواب المباشر:"
 
     payload = {
         "model": model,
@@ -561,17 +679,24 @@ def generate_answer_via_ollama(question: str, contexts: List[str], model: str = 
 
 def build_deterministic_fallback(question: str, contexts: List[str]) -> str:
     """Fast, reliable fallback that extracts facts from context if Ollama is unreachable."""
+    is_en = is_english_query(question)
     if not contexts:
-        return OUT_OF_SCOPE_RESPONSE
-    # Synthesize from contexts
+        return OUT_OF_SCOPE_RESPONSE_EN if is_en else OUT_OF_SCOPE_RESPONSE
+
     c_text = " ".join(contexts)
-    # Check for duration
+    if is_en:
+        if "45 دقيقة" in c_text and any(k in question.lower() for k in ["time", "how long", "duration"]):
+            return "Processing this service takes 45 minutes."
+        if "أماكن تقديم الخدمة" in c_text and any(k in question.lower() for k in ["where", "location", "place"]):
+            return "You can apply at Civil Status and Passports Department offices, or at Jordanian embassies and consulates abroad."
+        clean_parts = [c.split(":", 1)[-1].strip() for c in contexts if ":" in c]
+        return "Based on official instructions: " + "; ".join(clean_parts[:2])
+
+    # Arabic fallback
     if "45 دقيقة" in c_text and ("يستغرق" in question or "وقت" in question):
         return "يستغرق تقديم هذه الخدمة 45 دقيقة."
-    # Check for places
     if "أماكن تقديم الخدمة" in c_text and ("وين" in question or "مكان" in question):
         return "يمكنك تقديم الطلب في مكاتب دائرة الأحوال المدنية والجوازات، أو في السفارات والقنصليات الأردنية في الخارج."
-    # Generic grounded return
     clean_parts = [c.split(":", 1)[-1].strip() for c in contexts if ":" in c]
     return "بناءً على التعليمات الرسمية: " + "؛ ".join(clean_parts[:2])
 
@@ -597,14 +722,15 @@ def process_questions(questions_path: str, output_path: str, data_dir: str, mode
         for msg in messages:
             msg_id = msg.get("message_id")
             question = msg.get("question", "").strip()
+            is_en = is_english_query(question)
 
             try:
                 # 1. Out of Scope Check
                 if is_out_of_scope(question, prior_services=prior_services):
-                    ans = OUT_OF_SCOPE_RESPONSE
+                    ans = OUT_OF_SCOPE_RESPONSE_EN if is_en else OUT_OF_SCOPE_RESPONSE
                     ctx = []
                 elif is_unclear_question(question, prior_services=prior_services):
-                    ans = UNCLEAR_RESPONSE
+                    ans = UNCLEAR_RESPONSE_EN if is_en else UNCLEAR_RESPONSE
                     ctx = []
                 else:
                     # 2. Service Routing
