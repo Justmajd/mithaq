@@ -92,6 +92,47 @@ The facts behind the expected answers are in `tests/FACTS.md`. Running a test se
 | Guardrails (`tests/q_guard.json`: injection, illegal requests, personal data, other countries, garbage, long input) | 26/26 (run before the last fixes) |
 | Practice `questions.json` | 6/6 answered from the right service, with no errors |
 
+## Problems we hit and how we fixed them
+
+**Answer quality**
+
+| Problem | Fix |
+|---|---|
+| With a plain "here is the information" prompt the 7B model padded answers, added facts nobody asked for, and once reversed a condition ("دون موافقة زوجها" became "needs the husband's approval") | Switched to Command-R's native grounded-RAG format (documents passed as search-tool results). Answers became short and stayed with the documents |
+| Numbers disappeared from answers: the model wrote `[25]`, and our clean-up regex for citation marks deleted it | Bracketed and LaTeX-wrapped numbers (`[25]`, `$$25$$`) are now unwrapped instead of removed |
+| The stock phrase "وفقًا للمعلومات المتاحة" stayed in answers: the regex looked for "المعلومات" but the text had "للمعلومات" | Fixed the pattern (Arabic and English versions) |
+| Rules in the notes were ignored: a lost ID card is issued only 2 weeks after the police report, but the model answered "20 minutes" from the time field | Notes split into one chunk per rule and listed first; the prompt says a note overrides general information |
+| The wrong fee line was picked (100 JD instead of 50 for an expired passport, 20 for military instead of the asker's case) | Each fee line became its own document, then a fee-case selector keeps only the lines matching the asker (age, expiry, abroad, military, full pages, nth loss, late fine) |
+| Answers were padded with unrelated notes | No notes for place/procedure questions, and `contexts` keeps only the note items the answer actually uses |
+| A "topic of the question" hint made the model echo section headers ("شروط تقديم الخدمة:") and paste whole document lists | Removed it; only a short cue remains on comparisons ("answer for each service") |
+| English questions were answered in Arabic: an instruction at the end of the Arabic system prompt was ignored | Language detection; English questions get an explicit "answer in English" cue on the user's message |
+| "X is wrong, right?" questions got "not available" instead of a correction | Prompt rule: say it's wrong and give the correct fact (partly fixed, see Known issues) |
+
+**Routing**
+
+| Problem | Fix |
+|---|---|
+| English and Arabizi questions weren't routed at all (Arabic-only keywords) | Added English and Arabizi keyword tables; Latin words match at a word start with optional Arabizi prefixes (el-, b-, w-, bn-…) |
+| Dialect misses: "الكرت الذكي", "هويتي", "beta2ti", "hawiyto", "jadadt", "bndayya3" | Added the missing words and stems |
+| "الهوية المقدسية" (a fee category) was read as the ID-card service | Phrase excluded from document detection |
+| "ضاع لأول مرة" (lost for the first time) was read as a first-time application; "من الأول" (from the beginning) as "first time" | Lost/damaged wins over first time for one document; "لاول" doesn't match after "من ا" |
+| "second time" was read as a question about time; `jd` (dinar) matched the Arabizi word "jdeede" (new) | "time" ignores ordinal phrases; `jd` matches only as a whole word |
+| Generic words ("kam", "2adesh", "how much", "who") pulled in the wrong section, e.g. a time question got the fees | They count only when no specific field word matches |
+| A follow-up like "وتجديد الجواز إذا منتهي؟" lost the topic (fees) of the previous message | Short follow-ups keep the previous message's fields |
+| A comparison of two cases of one document ("بدل فاقد vs بدل تالف") retrieved only one | One document named means every situation named is retrieved |
+| Deadline questions ("within how long do I renew?") got the 45-minute processing time | Deadline words (خلال, within, 5ilal) point to the notes |
+
+**Guardrails and robustness**
+
+| Problem | Fix |
+|---|---|
+| Forgery, bribery and personal-data requests got a clarifying question ("which case?") because a document word was present | New refusal mode that runs before routing |
+| "Renew a Syrian / US passport" got Jordanian fees; a temporary passport (not in the data) got a clarifying question | Hard off-topic list (other nationalities, temporary, diplomatic) that applies even when a document is named |
+| The model could quote numbers not in the documents | Number check: regenerate if an answer has a number found in neither the documents nor the question |
+| The number check rejected correct answers because the documents spell numbers in words (السادسة عشر = 16, أسبوعين = 2 weeks) | Number words count as found; the retry uses the same grounded format |
+| Code review found crash paths: missing keys, non-dict messages, empty replies when the model returned a tool call, Ollama timeouts, Windows console encoding | Per-message try/except, input validation, retry on empty reply and on timeouts (900 s), safe stdout/stderr, `answers.json` always written |
+| The Ollama model download stalled at 0% | Restarted `ollama pull`; it resumed and completed |
+
 ## Known issues
 
 - A false claim phrased as a check ("takes two days صح؟") sometimes gets "not available" instead of the correction.
