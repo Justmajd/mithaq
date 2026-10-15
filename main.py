@@ -43,6 +43,8 @@ SERVICE_FILES = {
         "aliases": [
             "تجديد جواز السفر", "تجديد جواز سفر", "تجديد جواز", "تجديد باسبور", "تجديد الجواز",
             "باسبور منتهي", "جواز منتهي", "انتهى جوازي", "بدي اجدد جوازي", "اجدد جوازي", "تجديد باسبوري",
+            "اجدد جواز سفري", "اجدد جواز سفر", "بدي اجدد جواز سفري", "بدي اجدد جواز سفر", "بدي اجدد باسبوري",
+            "جواز سفري المنتهي", "جواز سفر منتهي", "جوازي منتهي", "باسبوري منتهي",
             "passport renewal", "renew passport", "renewing passport", "expired passport", "renew my passport"
         ]
     },
@@ -287,24 +289,38 @@ def normalize_arabic(text: str) -> str:
 
 # Arabizi / Franco-Arabic Transliteration Dictionary
 ARABIZI_MAP = {
+    # Actions & Verbs
     "baddi": "بدي", "badi": "بدي", "beddi": "بدي", "bedi": "بدي",
-    "jawaz": "جواز", "jawazi": "جوازي", "jawas": "جواز", "basbor": "باسبور", "safar": "سفر",
-    "hawyeh": "هوية", "haweyeh": "هوية", "hawya": "هوية", "bitaqa": "بطاقة", "bataqa": "بطاقة", "zakeyeh": "ذكية", "zakyeh": "ذكية",
-    "dafter": "دفتر", "daftar": "دفتر", "3eileh": "عائلة", "3ayleh": "عائلة", "3a2eleh": "عائلة", "3a2ilah": "عائلة",
     "a6ale3": "اطلع", "atale3": "اطلع", "atala3": "اطلع", "a3mel": "اعمل", "asawe": "اسوي",
     "tajdeed": "تجديد", "tajdid": "تجديد", "ajaded": "اجدد", "ajadded": "اجدد",
-    "daya3et": "ضيعت", "daya3to": "ضيعته", "da3": "ضاع", "faqad": "فاقد", "fa8ad": "فاقد",
+    "daya3et": "ضيعت", "daya3to": "ضيعته", "da3": "ضاع", "faqad": "فاقد", "fa8ad": "فاقد", "fa2ed": "فاقد", "faed": "فاقد", "faqed": "فاقد",
     "talef": "تالف", "maksoor": "مكسور", "kharban": "خربان", "in5azaq": "انخزق", "mablol": "مبلول",
+    "enkasrat": "انكسرت", "enkasar": "انكسر", "inkasarat": "انكسرت", "ehtara": "اهترى", "ehtarat": "اهترت",
+    "yastaghreq": "يستغرق", "yasta8req": "يستغرق", "yastaghrik": "يستغرق", "byo5od": "بياخذ", "byakhod": "بياخذ", "bya5od": "بياخذ",
+    "tzawwajet": "تزوجت", "tzawajet": "تزوجت", "tjawwazet": "تزوجت", "tjawazet": "تزوجت", "zawj": "زوج", "mowlood": "مولود", "walad": "ولد",
+
+    # Documents & Cards
+    "jawaz": "جواز", "jawazi": "جوازي", "jawas": "جواز", "basbor": "باسبور", "paspor": "باسبور", "safar": "سفر",
+    "hawyeh": "هوية", "haweyeh": "هوية", "hawya": "هوية", "hawiyeh": "هوية", "hawiyati": "هويتي",
+    "bitaqa": "بطاقة", "bataqa": "بطاقة", "bita2a": "بطاقة", "beta2a": "بطاقة", "betaqa": "بطاقة",
+    "zakeyeh": "ذكية", "zakyeh": "ذكية", "zakiyeh": "ذكية", "thakiyeh": "ذكية", "thakyeh": "ذكية",
+    "dafter": "دفتر", "daftar": "دفتر",
+    "3eileh": "عائلة", "3ayleh": "عائلة", "3a2eleh": "عائلة", "3a2ilah": "عائلة", "3a2ileh": "عائلة",
+
+    # Details, Quantifiers & Questions
     "2awwal": "اول", "awwal": "اول", "awal": "اول", "marra": "مرة", "mara": "مرة",
-    "kam": "كم", "adish": "قديش", "2adesh": "قديش", "gadesh": "قديش", "qadesh": "قديش",
-    "rosom": "رسوم", "rosum": "رسوم", "rusum": "رسوم", "se3er": "سعر",
+    "kam": "كم", "adish": "قديش", "2adesh": "قديش", "2adeesh": "قديش", "gadesh": "قديش", "qadesh": "قديش", "adeesh": "قديش",
+    "shu": "شو", "shoo": "شو", "sho": "شو",
+    "rosom": "رسوم", "rosum": "رسوم", "rusum": "رسوم", "rusoom": "رسوم", "se3er": "سعر", "badal": "بدل",
+    "btkallef": "بتكلف", "bikallef": "بيكلف", "btkalef": "بتكلف", "bikalef": "بيكلف",
     "wra2": "اوراق", "wra8": "اوراق", "awraq": "اوراق", "watha2eq": "وثائق", "matloob": "مطلوب", "lazem": "لازم",
     "matloobeh": "مطلوبة", "matlooba": "مطلوبة",
-    "shoroot": "شروط", "shurut": "شروط", "3omor": "عمر", "3omri": "عمري",
+    "shoroot": "شروط", "shurut": "شروط", "shuroo6": "شروط", "3omor": "عمر", "3omri": "عمري",
     "wein": "وين", "wen": "وين", "makan": "مكان", "safara": "سفارة", "safarah": "سفارة", "maktab": "مكتب",
     "waqt": "وقت", "waqet": "وقت", "d8ayeq": "دقائق",
-    "tzawwajet": "تزوجت", "tzawajet": "تزوجت", "zawj": "زوج", "mowlood": "مولود", "walad": "ولد",
-    "el": "ال", "al": "ال", "il": "ال"
+    "jdeed": "جديد", "jdeedeh": "جديدة", "jdid": "جديد",
+    "w": "و", "el": "ال", "al": "ال", "il": "ال", "l": "ال",
+    "minni": "مني", "menni": "مني"
 }
 
 
@@ -314,8 +330,9 @@ def is_arabizi_query(text: str) -> bool:
         return True
     lower = text.lower()
     franco_tokens = [
-        "baddi", "beddi", "jawaz", "hawyeh", "dafter", "3eileh", "a6ale3", "tajdeed",
-        "daya3et", "elrosom", "elwra2", "el3eileh", "elhawyeh", "eljawaz", "maksoor"
+        "baddi", "beddi", "jawaz", "hawyeh", "hawiyeh", "dafter", "daftar", "3eileh", "3ayleh", "a6ale3", "tajdeed",
+        "daya3et", "elrosom", "elwra2", "el3eileh", "elhawyeh", "eljawaz", "maksoor", "bita2a", "thakiyeh", "zakeyeh",
+        "rusoom", "enkasrat", "tjawwazet"
     ]
     return any(t in lower for t in franco_tokens)
 
@@ -454,7 +471,8 @@ def is_unclear_question(question: str, prior_services: Optional[List[str]] = Non
             "جواز", "باسبور", "سفر", "دفتر", "عائل", "عيل", "بطاق", "هوي", "احوال", "ذكيه", "رب الاسره"
         ]) or
         any(k in lower_q for k in [
-            "passport", "id card", "smart id", "identity card", "family book", "civil card"
+            "passport", "id card", "smart id", "identity card", "family book", "civil card",
+            "jawaz", "paspor", "hawyeh", "hawiyeh", "bita2a", "bitaqa", "daftar", "dafter", "3a2ileh", "3ayleh", "3eileh"
         ])
     )
     if has_doc_type:
@@ -488,13 +506,6 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
                 if s_key not in found_services:
                     found_services.append(s_key)
 
-    has_comparison = (
-        any(k in norm_q for k in ["ايهما", "ايها", "الفرق", "مقارنه", " ولا ", " ام "]) or
-        any(k in lower_q for k in ["which is more expensive", "compare", "difference between", "higher fee", " vs ", " versus "])
-    )
-    if found_services and not has_comparison:
-        return found_services
-
     # Pre-extract any global doc types in the question
     global_docs = []
     if any(k in norm_q for k in ["جواز", "باسبور"]) or any(k in lower_q for k in ["passport", "passports", "travel document"]):
@@ -515,8 +526,22 @@ def detect_services(question: str, prior_services: List[str] = None) -> List[str
         global_docs.append("id_card")
         global_docs.append("passport")
 
+    has_comparison = (
+        any(k in norm_q for k in [
+            "ايهما", "ايها", "الفرق", "مقارنه", " ولا ", " ام ",
+            "معاملتين", "خدمتين", "كل خدمه", "بنفس الوقت", "نفس الوقت", "مع بعض", "بالاضافه", "وكمان", "اكثر من خدمه"
+        ]) or
+        any(k in lower_q for k in [
+            "which is more expensive", "compare", "difference between", "higher fee", " vs ", " versus ",
+            "both services", "each service", "two services", "at the same time", "together"
+        ]) or
+        len(global_docs) > 1
+    )
+    if found_services and not has_comparison:
+        return found_services
+
     # 2. Check by clauses to associate doc_type with action correctly (avoids Cartesian explosion)
-    clauses = re.split(r"[،,\n]|(?:\s+(?:و|أو|أم|ولا|مقابل|بينما|and|or|vs|versus|while)\s+)", question)
+    clauses = re.split(r"[،,\n]|(?:\s+(?:و|أو|أم|ولا|مقابل|بينما|and|or|vs|versus|while)\s+)|(?:\s+(?:وبنفس\s+الوقت|بنفس\s+الوقت|وكمان|بالإضافة\s+إلى|بالاضافه\s+الي)\s+)", question)
     
     last_doc = None
     for clause in clauses:
@@ -620,11 +645,14 @@ def detect_target_sections(question: str) -> List[str]:
     lower_q = question.lower()
     sections = []
 
-    # Time / Duration
-    if (
-        any(k in norm_q for k in ["وقت", "زمن", "يستغرق", "قديش بدها", "مده", "ساعه", "دقيق"]) or
-        any(k in lower_q for k in ["time", "duration", "how long", "take", "takes", "minutes", "hours", "processing time"])
-    ):
+    # Time / Duration (Excluding conjunction 'بنفس الوقت' / 'at the same time')
+    has_time = (
+        any(k in norm_q for k in ["كم وقت", "قديش وقت", "الوقت المستغرق", "الزمن المستغرق", "زمن", "يستغرق", "قديش بدها", "مده", "ساعه", "دقيق"]) or
+        ("وقت" in norm_q and "بنفس الوقت" not in norm_q and "نفس الوقت" not in norm_q) or
+        any(k in lower_q for k in ["how long", "duration", "processing time", "minutes", "hours"]) or
+        ("time" in lower_q and "at the same time" not in lower_q and "same time" not in lower_q)
+    )
+    if has_time:
         sections.append("الزمن المستغرق لتقديم الخدمة")
 
     # Location / Places

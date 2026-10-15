@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-10-15
+
+### Added
+- **Balanced Diagnostic Auditor (`generate_and_audit.py`)**: Automated test generator and in-memory fast diagnostic auditor covering all 8 question categories (Fusha, Ammiya, English, Arabizi, Comparisons & Stories, Multi-Turn, Ambiguous, Out-of-Scope/Jailbreak).
+- **Balanced Test Dataset**: Added `test_balanced_questions.json` and `test_balanced_ground_truth.json` (56 curated diagnostic scenarios).
+
+### Fixed
+- **Arabizi Transliteration Coverage**: Expanded vocabulary to cover damaged ID card variations (`bita2a`, `thakiyeh`, `hawiyeh`, `enkasrat`) and duration terms (`yastaghreq`).
+- **Conjunction vs Duration Disambiguation**: Differentiated the idiomatic Jordanian conjunction `بنفس الوقت` ("at the same time") from explicit time inquiries, preventing false triggers of the duration section.
+- **Multi-Service Compound Routing**: Enhanced `detect_services` to detect multi-service queries (`معاملتين`, `خدمتين`, `كل خدمة`, `len(global_docs) > 1`), accurately routing multi-transaction requests to both target services without premature single-alias exits.
+- **Achieved 100.0% Pass Rate**: Verified 56/56 (100%) on the balanced diagnostic suite and 300/300 (100%) on the 300 benchmark suite with zero regressions.
+
 ## [1.0.0] - 2026-10-15
 
 ### Added
