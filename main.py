@@ -75,9 +75,9 @@ FIELD_KEYWORDS = {
              "بدفع", "يدفع", "ببلاش", "مجاني", "مجانا", "مستعجل", "مستعجله", "غرامه", "قديش بدفع", "كم بدفع", "قديش حقه", "حق"],
     "documents": ["تعهد", "كفاله", "اوراق", "ورق", "وثائق", "مستندات", "مطلوب", "بلزم", "بلزمني", "بحتاج", "احتاج",
                   "اجيب", "احضر", "صور", "صوره", "اوراقي"],
-    "time": ["اسرع", "خلال", "مده", "وقت", "يستغرق", "بياخذ", "ياخذ", "بطول", "دقيقه", "دقايق", "ساعه", "متى", "قديش بده"],
+    "time": ["اسرع", "مده", "وقت", "يستغرق", "بياخذ", "ياخذ", "بطول", "دقيقه", "دقايق", "ساعه", "متى", "قديش بده"],
     "places": ["وين", "اين", "مكان", "اماكن", "سفاره", "قنصليه", "برا البلد", "خارج", "بره", "مكتب", "فرع"],
-    "conditions": ["يوافق", "وكاله", "توكيل", "بيحقله", "شروط", "شرط", "شخصيا", "عمر", "سن", "يحق", "مسموح", "موافقه", "بدون", "وكيل", "بالنيابه", "عني"],
+    "conditions": ["قصد", "متعمد", "عمدا", "شو بصير", "شو بيصير", "يوافق", "وكاله", "توكيل", "بيحقله", "شروط", "شرط", "شخصيا", "عمر", "سن", "يحق", "مسموح", "موافقه", "بدون", "وكيل", "بالنيابه", "عني"],
     "procedure": ["خطوات", "اجراءات", "طريقه", "كيف", "شو بعمل"],
     "target": ["الفئه", "يستفيد"],
     "partners": ["شركاء", "جهات", "جهه"],
@@ -122,13 +122,14 @@ LATIN_FIELDS = {
                   "awra2", "awraq", "wara2", "wra2", "wathayi2", "wathayeq", "wathaye2", "mustanadat", "bl7aje",
                   "b7taj", "ba7taj", "a7taj", "bi7taj", "blzam", "bilzam", "bilzamni", "blzamni", "ajeeb", "jeeb",
                   "sora", "suwar", "sowar", "swar", "soura", "sura", "9ora", "9owar"],
-    "time": ["within", "5ilal", "khilal", "asra3", "fastest", "faster", "how long", "time", "take", "minute", "hour", "day", "when", "wait", "quick", "fast", "wa2t", "wa2et",
+    "time": ["asra3", "fastest", "faster", "how long", "time", "take", "minute", "hour", "day", "when", "wait", "quick", "fast", "wa2t", "wa2et",
              "byakhod", "biyakhod", "byo5od", "by5od", "byakhd", "mudde", "mudda", "modde", "emta", "imta", "aimta",
              "da2i2a", "d2ay2", "sa3a"],
     "places": ["where", "place", "location", "embassy", "consulate", "abroad", "outside", "office", "branch",
                "wen", "wein", "wain", "ween", "makan", "mkan", "safara", "sefara", "2onsolia", "qunsuliya", "barra",
                "5arej", "kharej", "maktab"],
-    "conditions": ["ywaf2", "bwaf2", "mwaf2", "waf2", "wakale", "tawkeel", "msmoo7", "masmoo7", "msmo7",
+    "conditions": ["on purpose", "intentional", "deliberate", "2asd", "3amdan", "what happens", "shu bseer",
+                   "shu biseer", "ywaf2", "bwaf2", "mwaf2", "waf2", "wakale", "tawkeel", "msmoo7", "masmoo7", "msmo7",
                    "mesmoo7", "ye7a2", "y7a2", "condition", "requirement", "allowed", "in person", "age", "approval", "permission", "consent",
                    "proxy", "on behalf", "someone else", "husband", "guardian", "shroot", "shuroot", "shart",
                    "mwafa2a", "mowafa2a", "mwafa2et", "wakeel", "wkale", "wakkel", "3anni", "shakhsiyan", "3omri",
@@ -149,12 +150,13 @@ for _table, _extra in ((DOC_KEYWORDS, LATIN_DOC), (SITUATION_KEYWORDS, LATIN_SIT
     for _key, _words in _extra.items():
         _table.setdefault(_key, []).extend(_words)
 OFF_TOPIC = OFF_TOPIC + LATIN_OFF_TOPIC
+NOTES_INTENT = ["خلال", "مهله", "within", "deadline", "5ilal", "khilal", "mohle"]
 WEAK_FIELD_KEYWORDS = {
     "fees": ["قديش", "كم", "how much", "2adesh", "adesh", "adeesh", "2adeesh", "addesh", "kam"],
     "target": ["مين", "لمين", "who", "meen", "la meen"],
 }
 _LATIN_PREFIX = r"(?<![a-z0-9'])(?:el|il|al|l|b|w|wl|bl|fl|3al|bn|bt|by|ba|bi|n|t|y|a|ma)?"
-SPECIAL = {"time": r"(?<![a-z\-])(?<!first )(?<!second )(?<!third )(?<!1st )(?<!2nd )(?<!3rd )(?<!this )(?<!last )(?<!next )(?<!every )(?<!one )(?<!first-)time",  # "second time" is not a time question
+SPECIAL = {"jd": r"(?<![a-z])jd(?![a-z])", "time": r"(?<![a-z\-])(?<!first )(?<!second )(?<!third )(?<!1st )(?<!2nd )(?<!3rd )(?<!this )(?<!last )(?<!next )(?<!every )(?<!one )(?<!first-)time",  # "second time" is not a time question
            "لاول": "(?<!من ا)لاول", "جواز": "جواز(?!ات)", "id": r"\bid\b", "حق": r"\bحق\b"}
 
 # ---- prompts ----
@@ -164,7 +166,8 @@ SYSTEM_PROMPT = (
     "- انسخ الأرقام والمبالغ والمدد والشروط كما وردت حرفياً وبالأرقام، ولا تحسب ولا تستنتج أرقاماً جديدة.\n"
     "- إذا تعددت الرسوم حسب الحالة (العمر، الصلاحية، داخل الأردن أو خارجه، عدد مرات الفقدان) فاختر السطر المطابق لحالة السائل فقط؛ "
     "وإن لم تتضح حالته فاذكر الحالات باختصار.\n"
-    "- بنود الملاحظات قواعد مستقلة تنطبق على الجميع ما لم يذكر البند حالة بعينها؛ اذكر البند فقط إذا كان يغيّر الجواب.\n"
+    "- بنود الملاحظات قواعد مستقلة تنطبق على الجميع ما لم يذكر البند حالة بعينها؛ اذكر البند فقط إذا كان يغيّر الجواب. "
+    "إذا قيّد بند في الملاحظات معلومة عامة (مثل موعد استلام الوثيقة أو مهلة التجديد) فالملاحظة هي المعتمدة في الجواب.\n"
     "- إذا ذكر السائل معلومة خاطئة أو سأل للتأكد (صح؟ / right?) فقل إنها غير صحيحة واذكر المعلومة الصحيحة من النتائج "
     "(مثل المدة أو الرسوم الصحيحة، أو أماكن التقديم الصحيحة إذا ذكر مكاناً غير مذكور فيها) بدلاً من قول إن المعلومة غير متوفرة.\n"
     "- إن لم تجد الجواب فقل إن المعلومة غير متوفرة لديك.\n"
@@ -278,6 +281,8 @@ def keyword_fields(question):
     strong = [f for f in FIELD_ORDER if f in FIELD_RE and any(p.search(qn) for p in FIELD_RE[f])]
     if strong:
         return strong
+    if any(_kw_re(w).search(qn) for w in NOTES_INTENT):  # deadlines live in the notes, not in "time taken"
+        return ["notes"]
     return [f for f in FIELD_ORDER if f in WEAK_FIELD_RE and any(p.search(qn) for p in WEAK_FIELD_RE[f])]
 
 
@@ -480,18 +485,83 @@ def plan(question, last, chunks, vectors, prev_fields=None):
 
 # ---- LLM and main loop ----
 def _focus_hint(p):
-    """Tell the model which section(s) the question is about (helps with Arabizi and terse questions)."""
-    fields = [HEADERS[f] for f in p.get("fields", []) if f != "notes"]
-    return f"\n(المطلوب في السؤال: {'، '.join(fields)})" if fields else ""
+    """On comparisons, remind the model to answer for every service (it tends to answer only the first)."""
+    if len(p.get("services", [])) < 2:
+        return ""
+    return "\n(أجب عن كل من: " + " و ".join(SERVICES[s] for s in p["services"]) + ")"
 
 
-def _split_fee_lines(contexts):
-    """One document per fee line, so the model picks the line matching the asker's case."""
+# Case cues in the question -> which fee lines apply (age, expiry, abroad, military, full pages, nth loss, fine)
+_CUES = {
+    "expired": ["منتهي", "انتهى", "انتهت", "expired", "montahi", "muntahi", "intaha", "5ales"],
+    "valid": ["مش منتهي", "ما انتهى", "لسا ما", "لسا ساري", "ساري", "not expired", "still valid", "valid",
+              "mish montahi", "lissa sari", "sari"],
+    "abroad": ["خارج", "برا البلد", "بره البلد", "abroad", "outside jordan", "السفاره", "embassy", "safara", "الامارات",
+               "قطر", "السعوديه", "الكويت", "كندا", "المانيا", "امريكا", "بريطانيا", "تركيا", "uae", "qatar", "saudi",
+               "kuwait", "canada", "germany", "usa", "emarat", "2a6ar", "bl emarat"],
+    "inside": ["داخل", "بالاردن", "in jordan", "عمان", "الزرقاء", "الزرقا", "اربد", "zarqa", "amman", "irbid", "zar2a"],
+    "military": ["عسكري", "القوات المسلحه", "جيش", "الامن العام", "military", "army", "soldier", "3askari"],
+    "full": ["امتلت", "ممتلئ", "full", "الصفحات", "pages", "sf7at", "safa7at"],
+    "later": ["ثاني", "تاني", "ثالث", "تالت", "second", "2nd", "third", "3rd", "tani", "talet", "talt"],
+    "first": ["اول مره", "لاول مره", "المره الاولى", "first time", "awal marra"],
+    "fine": ["غرامه", "تاخير", "late", "fine", "penalty", "8arame", "gharame", "ta25eer", "8aramet"],
+}
+_AGE_RE = re.compile(r"(?:عمر\S*|3omr\S*|aged?|i'?m|i am)\D{0,6}(\d{1,2})\b|(\d{1,2})\s*(?:سنه|سنين|سنوات|years?|sneen|sene)")
+
+
+def _fee_line_score(line, cues, age):
+    """How well one fee line matches the asker's case (higher is better; 0 = neutral)."""
+    ln, score = norm(line), 0
+    under16 = "دون" in ln and ("16" in ln or "السادسه عشر" in ln)
+    over16 = "فوق" in ln and ("16" in ln or "السادسه عشر" in ln)
+    expired = "منتهي" in ln and "غير المنتهي" not in ln and "غير منتهي" not in ln
+    valid = "غير المنتهي" in ln or "غير منتهي" in ln or "ساري" in ln
+    if age is not None:
+        score += (2 if under16 else -3 if over16 else 0) if age < 16 else (2 if over16 else -3 if under16 else 0)
+    if "expired" in cues and "valid" not in cues:
+        score += 2 if expired else -3 if valid else 0
+    if "valid" in cues:
+        score += 2 if valid else -3 if expired else 0
+    if "abroad" in cues:
+        score += 2 if "خارج" in ln else -2 if "داخل" in ln else 0
+    elif "inside" in cues:
+        score += 2 if "داخل" in ln else -3 if "خارج" in ln else 0
+    if "القوات المسلحه" in ln:
+        score += 3 if "military" in cues else -1
+    if "full" in cues and "الممتلي" in ln:  # norm() turns ئ into ي
+        score += 3
+    later_line = "تلي" in ln or "الثانيه" in ln
+    first_line = "المره الاولى" in ln
+    if "later" in cues:
+        score += 2 if later_line else -3 if first_line else 0
+    elif "first" in cues:
+        score += 2 if first_line else -3 if later_line else 0
+    if "fine" in cues and "غرامه" in ln:
+        score += 2
+    return score
+
+
+def select_fee_lines(lines, question):
+    """Keep only the fee lines matching the asker's case; all lines when the question gives no case cues."""
+    qn = norm(question)
+    cues = {k for k, words in _CUES.items() if any(norm(w) in qn for w in words)}
+    m = _AGE_RE.search(qn)
+    age = int(next(g for g in m.groups() if g)) if m else None
+    if not cues and age is None or len(lines) < 2:
+        return lines
+    scores = [_fee_line_score(ln, cues, age) for ln in lines]
+    best = max(scores)
+    return [ln for ln, sc in zip(lines, scores) if sc == best] if best > 0 else lines
+
+
+def _split_fee_lines(contexts, question=""):
+    """One document per fee line (only the lines matching the asker's case), so the model picks the right one."""
     tag, out = f" - {HEADERS['fees']}: ", []
     for c in contexts:
         if tag in c and "\n" in c:
             head, body = c.split(tag, 1)
-            out += [f"{head}{tag}{ln}" for ln in body.split("\n") if ln.strip()]
+            lines = select_fee_lines([ln for ln in body.split("\n") if ln.strip()], question)
+            out += [f"{head}{tag}{ln}" for ln in lines]
         else:
             out.append(c)
     return out
@@ -527,7 +597,7 @@ def _build_messages(p, question, history, grounded=GROUNDED):
             fee_tag = f" - {HEADERS['fees']}: "
             first = (lambda c: fee_tag in c) if "fees" in p["fields"] else (lambda c: tag in c)
             ordered = [c for c in p["contexts"] if first(c)] + [c for c in p["contexts"] if not first(c)]
-            docs = [{"id": f"doc_{i}", "text": t} for i, t in enumerate(_split_fee_lines(ordered))]
+            docs = [{"id": f"doc_{i}", "text": t} for i, t in enumerate(_split_fee_lines(ordered, question))]
             msgs += [{"role": "user", "content": question + _focus_hint(p)},
                      {"role": "assistant", "content": "",
                       "tool_calls": [{"function": {"name": "search_services", "arguments": {"query": question}}}]},

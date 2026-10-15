@@ -53,7 +53,7 @@ Facts used for expectations are in `tests/FACTS.md`.
 
 | Test set | Result |
 |---|---|
-| 100 questions (25 Arabic / 25 English / 25 mixed / 25 Arabizi) | 84/100 measured (23 / 22 / 20 / 19); 2 more fixed afterwards by the "second time" routing fix |
+| 100 questions (25 Arabic / 25 English / 25 mixed / 25 Arabizi) | 84/100 on the full run; afterwards 13 of the 16 failures fixed (fee-case selector, notes handling) — ~97/100 expected, full set not re-run |
 | Guardrails (`tests/q_guard.json`: injection, illegal, personal data, other countries, garbage, long input) | 26/26 |
 | Out of scope / unclear / conversation / places / time / documents | 100% on the 100-question set |
 
