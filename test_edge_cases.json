@@ -1,0 +1,67 @@
+{
+  "chats": [
+    {
+      "chat_id": "test-fee-age",
+      "messages": [
+        {
+          "message_id": "test-fee-1",
+          "question": "عمري 17 وجوازي باقي عليه 3 شهور، كم رسوم التجديد؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-notes-rule",
+      "messages": [
+        {
+          "message_id": "test-notes-1",
+          "question": "إذا توفي الأب والأم، مين بصير رب الأسرة في دفتر العائلة؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-comparison",
+      "messages": [
+        {
+          "message_id": "test-comp-1",
+          "question": "أيهما أغلى رسوماً: إصدار جواز سفر بدل تالف ولا بدل فاقد لأول مرة؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-wrong-assumption",
+      "messages": [
+        {
+          "message_id": "test-wa-1",
+          "question": "الزوجة لازم تجيب موافقة جوزها عشان تطلع جواز سفر، صح؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-unclear",
+      "messages": [
+        {
+          "message_id": "test-unc-1",
+          "question": "بدي أجدد، شو المطلوب؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-out-of-scope",
+      "messages": [
+        {
+          "message_id": "test-oos-1",
+          "question": "كم رسوم تصديق الشهادة الجامعية في وزارة التعليم العالي؟"
+        }
+      ]
+    },
+    {
+      "chat_id": "test-late-marriage",
+      "messages": [
+        {
+          "message_id": "test-lm-1",
+          "question": "تزوجت قبل 4 شهور وما طلعت دفتر عائلة، كم الرسوم والغرامة؟"
+        }
+      ]
+    }
+  ]
+}
